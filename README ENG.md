@@ -1,19 +1,18 @@
 # Banana-pi-m2-zero-GPIO <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> 
-gpio pin configuration and use project on Bananapi m2 zero board
+#### gpio pin configuration and use project on Bananapi m2 zero board
 
 ![BANANAPI-ZERO-01 (1)](https://user-images.githubusercontent.com/62630527/128290176-105ffebd-346a-4c38-8d4a-be466738a2ef.png)
 
 
 ## Hi i'm roxas
 
-I created this repo due to the lack of practical information for managing GPIOs with Bananapi m2 zero, 
-so through this small guide I proposed to make life easier for them with this topic.
+#### I created this repo due to the lack of practical information for managing GPIOs with Bananapi m2 zero, so through this small guide I proposed to make life easier for them with this topic.
 
 ## Quick Install
 
-### With the Quick installation you will only have to select your directory once requested (Example: /home/(your directory)).
+#### With the Quick installation you will only have to select your directory once requested (Example: /home/(your directory)).
 
-### In addition to that you will have to take into account that the installation will take a while and that you may have to run the script a second time to avoid errors that may have arisen during the installation.
+#### In addition to that you will have to take into account that the installation will take a while and that you may have to run the script a second time to avoid errors that may have arisen during the installation.
 
     sudo git clone https://github.com/TuryRx/Banana-pi-m2-zero-GPIO.git
     cd Bananapi-m2-zero-GPIO
@@ -188,7 +187,7 @@ so through this small guide I proposed to make life easier for them with this to
     https://www.youtube.com/channel/UCsVnls-pcXUDKCafBRPJIsg
 
 ## Downloads <img src="https://user-images.githubusercontent.com/62630527/158044106-a52b6ef1-a65d-42d1-b376-79284df8721b.png" width="25px">
-### System images for download
+#### System images for download
 
 #### Focal ubuntu based server image
     https://www.mediafire.com/file/8bbmt4ovp1np3l5/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52.img_26-07-2021_optifine.rar/file
@@ -201,7 +200,7 @@ so through this small guide I proposed to make life easier for them with this to
 
 ### Usage examples
 
-####You can find examples for the oled screen in the directory luma.examples / examples / and an example to be able to use leds in Bananapi-m2-zero-GPIO-files /
+You can find examples for the oled screen in the directory luma.examples / examples / and an example to be able to use leds in Bananapi-m2-zero-GPIO-files /
 
 ### i2c OLED display example
 

@@ -1,19 +1,18 @@
 # Banana-pi-m2-zero-GPIO <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> 
-Proyecto de configuración y uso de pin gpio en la placa Banana Pi M2 Zero
+#### Proyecto de configuración y uso de pin gpio en la placa Banana Pi M2 Zero
 
 ![BANANAPI-ZERO-01 (1)](https://user-images.githubusercontent.com/62630527/128290176-105ffebd-346a-4c38-8d4a-be466738a2ef.png)
 
 
 ## Hola soy Roxas
 
-Creé este repositorio debido a la falta de información sobre el manejo GPIO con Bananapi m2 cero,
-así que mi propósito a través de esta pequeña guía es hacer la vida un poco más fácil en cuento a este tema.
+####Creé este repositorio debido a la falta de información sobre el manejo GPIO con Bananapi m2 cero, así que mi propósito a través de esta pequeña guía es hacer la vida un poco más fácil en cuento a este tema.
 
 ## Instalación Rápida
 
-### Mediante la instalación rápida solo se tendrá que seleccionar su directorio una vez lo solicite (Ejemplo: /home/(su directorio)).
+#### Mediante la instalación rápida solo se tendrá que seleccionar su directorio una vez lo solicite (Ejemplo: /home/(su directorio)).
 
-### Además de que se tendrá que tener en cuenta que la instalación tardara un poco y que tal vez tengan que ejecutar el script una segunda vez para evitar fallos que se hayan podido suscitar durante la instalación.
+#### Además de que se tendrá que tener en cuenta que la instalación tardara un poco y que tal vez tengan que ejecutar el script una segunda vez para evitar fallos que se hayan podido suscitar durante la instalación.
 
 	sudo git clone https://github.com/TuryRx/Banana-pi-m2-zero-GPIO.git
 	cd Bananapi-m2-zero-GPIO
@@ -188,7 +187,7 @@ así que mi propósito a través de esta pequeña guía es hacer la vida un poco
     https://www.youtube.com/channel/UCsVnls-pcXUDKCafBRPJIsg
 
 ## Descargas <img src="https://user-images.githubusercontent.com/62630527/158044106-a52b6ef1-a65d-42d1-b376-79284df8721b.png" width="25px">
-### Imagenes de Sistema
+#### Imagenes de Sistema
 
 #### Ubuntu Focal Servidor 
     https://www.mediafire.com/file/8bbmt4ovp1np3l5/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52.img_26-07-2021_optifine.rar/file
@@ -201,7 +200,7 @@ así que mi propósito a través de esta pequeña guía es hacer la vida un poco
 
 ### Uso de ejemplos
 
-####Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/examples/ y un ejemplo para poder usar leds en Bananapi-m2-zero-GPIO-files/
+Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/examples/ y un ejemplo para poder usar leds en Bananapi-m2-zero-GPIO-files/
 
 ### Ejemplo de uso de pantalla oled i2c
 
