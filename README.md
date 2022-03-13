@@ -8,6 +8,15 @@
 
 Creé este repositorio debido a la falta de información sobre el manejo GPIO con Bananapi m2 cero, así que mi propósito a través de esta pequeña guía es hacer la vida un poco más fácil en cuento a este tema.
 
+## Tabla de contenidos
+
+- [Instalación Rápida](#instalación-rápida-)
+- [Instalación Manual](#instalación-manual-)
+- [Uso de ejemplos](#uso-de-ejemplos)
+- [Descarga de Imagenes](#descargas-)
+- [Links y Video.](#espero-les-guste-y-sirva-este-pequeño-aporte-ademas-aqui-les-dejo-un-video-un-poco-mas-detallado-sobre-esto)
+- [Referencias](#referencias)
+
 ## Instalación Rápida <img src="https://user-images.githubusercontent.com/62630527/158048706-9cb18a7c-c450-4d83-bf7d-d96cbc0ffd7d.png" width="25px"> 
 
 Mediante la instalación rápida solo se tendrá que seleccionar su directorio una vez lo solicite                                                       (Ejemplo:/home/(su_directorio)).
@@ -231,7 +240,7 @@ Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/e
 ![Captura de pantalla (152)](https://user-images.githubusercontent.com/62630527/128299716-25ec4b3f-ff32-4af0-93fe-31d0ab6f5d7f.png)
 ####
 
-## Referencias.
+## Referencias
 
     https://github.com/adafruit/Adafruit_Python_GPIO
     https://github.com/adafruit/Adafruit_Python_SSD1306
