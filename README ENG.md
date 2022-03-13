@@ -8,7 +8,7 @@
 
 I created this repo due to the lack of practical information for managing GPIOs with Bananapi m2 zero, so through this small guide I proposed to make life easier for them with this topic.
 
-## Quick Install
+## Quick Install <img src="https://user-images.githubusercontent.com/62630527/158048706-9cb18a7c-c450-4d83-bf7d-d96cbc0ffd7d.png" width="25px"> 
 
 With the Quick installation you will only have to select your directory once requested (Example:/home/(your_directory)).
 
@@ -19,7 +19,7 @@ In addition to that you will have to take into account that the installation wil
     sudo chmod 777 -R Banana_Pi_M2Z_GPIO.sh
     sudo ./Banana_Pi_M2Z_GPIO.sh
 
-## Installation Manual
+## Installation Manual <img src="https://user-images.githubusercontent.com/62630527/158048709-40521673-c4d2-41a1-86b4-c931c01f3c12.png" width="25px">
 
 #### Starting we will have to install the following repositories.
 
