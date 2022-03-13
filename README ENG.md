@@ -6,13 +6,13 @@
 
 ## Hi i'm roxas
 
-#### I created this repo due to the lack of practical information for managing GPIOs with Bananapi m2 zero, so through this small guide I proposed to make life easier for them with this topic.
+I created this repo due to the lack of practical information for managing GPIOs with Bananapi m2 zero, so through this small guide I proposed to make life easier for them with this topic.
 
 ## Quick Install
 
-#### With the Quick installation you will only have to select your directory once requested (Example:/home/(your_directory)).
+With the Quick installation you will only have to select your directory once requested (Example:/home/(your_directory)).
 
-#### In addition to that you will have to take into account that the installation will take a while and that you may have to run the script a second time to avoid errors that may have arisen during the installation.
+In addition to that you will have to take into account that the installation will take a while and that you may have to run the script a second time to avoid errors that may have arisen during the installation.
 
     sudo git clone https://github.com/TuryRx/Banana-pi-m2-zero-GPIO.git
     cd Bananapi-m2-zero-GPIO
@@ -21,7 +21,7 @@
 
 ## Installation Manual
 
-### Starting we will have to install the following repositories.
+#### Starting we will have to install the following repositories.
 
     sudo apt-get -y update
     sudo apt-get -y upgrade
@@ -30,12 +30,12 @@
     sudo add-apt-repository -y multiverse
     sudo add-apt-repository -y restricted
 
-### Then we will perform a small update to the system.
+#### Then we will perform a small update to the system.
 
     sudo apt-get update -y
     sudo apt-get upgrade -y
 
-### Once this is done, we will proceed to the installation of the packages that we will need to be able to use the libraries and dependencies that we will see later.
+#### Once this is done, we will proceed to the installation of the packages that we will need to be able to use the libraries and dependencies that we will see later.
 
     sudo apt-get install -y \
     inxi \
@@ -61,7 +61,7 @@
     lm-sensors \
     armbian-config \
 
-### Followed by this we will download and install the libraries that will be used with python3 to which at this point we will not install all that will be done after the download of dependencies that we need.
+#### Followed by this we will download and install the libraries that will be used with python3 to which at this point we will not install all that will be done after the download of dependencies that we need.
 
     sudo python3 -m pip install --upgrade pip setuptools wheel
     sudo pip3 install Adafruit-Blinka
@@ -73,7 +73,7 @@
     sudo pip3 install subprocess.run
     sudo pip3 install vcgencmd
 
-### At this point we will proceed to execute the download of the dependencies that we will use based on the following repositories in addition to executing them.
+#### At this point we will proceed to execute the download of the dependencies that we will use based on the following repositories in addition to executing them.
 
     git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
     cd Adafruit_Python_GPIO
@@ -113,7 +113,7 @@
     git clone https://github.com/TuryRx/Bananapi-m2-zero-GPIO-files.git
 
 
-### Perfect once this is finished we will finish with the installation of the missing python3 libraries.
+#### Perfect once this is finished we will finish with the installation of the missing python3 libraries.
 
     sudo pip3 install --upgrade ssd1306
     sudo pip3 install Adafruit-SSD1306
@@ -121,7 +121,7 @@
     sudo pip3 install --upgrade luma.oled
 
 
-### Now we go to the Banana-Pi-m2-zero-GPIO-files folder and copy the files to the following directories in order to enable the use of the GPIO pins.
+#### Now we go to the Banana-Pi-m2-zero-GPIO-files folder and copy the files to the following directories in order to enable the use of the GPIO pins.
 
     cd Bananapi-m2-zero-GPIO-files/bpi-servicee
     cd etc
@@ -139,7 +139,7 @@
 
     cd ..
 
-### Well now that we have copied the files to our system we only have to change a few things within one of them so that we can establish the model of our banana pi m2 zero.
+#### Well now that we have copied the files to our system we only have to change a few things within one of them so that we can establish the model of our banana pi m2 zero.
 
     sudo nano /var/lib/bananapi/board.sh
 
@@ -155,11 +155,11 @@
     BOARD_AUTO=bpi-m2z
     BOARD_OLD=bpi-m64
 
-### Now we will only add our user to the i2c list to be able to work with the data bus.
+#### Now we will only add our user to the i2c list to be able to work with the data bus.
 
     sudo adduser (your user) i2c
 
-### to finish remember that you will also have to enable the i2c, wl-gpio options in the armbian configuration world as well as I will leave you the links of my armbian images to build both the desktop and server with the ability to do overclock if required.
+#### to finish remember that you will also have to enable the i2c, wl-gpio options in the armbian configuration world as well as I will leave you the links of my armbian images to build both the desktop and server with the ability to do overclock if required.
 
     sudo armbian-config
 
@@ -187,7 +187,6 @@
     https://www.youtube.com/channel/UCsVnls-pcXUDKCafBRPJIsg
 
 ## Downloads <img src="https://user-images.githubusercontent.com/62630527/158044106-a52b6ef1-a65d-42d1-b376-79284df8721b.png" width="25px">
-#### System images for download
 
 #### Focal ubuntu based server image
     https://www.mediafire.com/file/8bbmt4ovp1np3l5/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52.img_26-07-2021_optifine.rar/file

@@ -6,13 +6,13 @@
 
 ## Hola soy Roxas
 
-#### Creé este repositorio debido a la falta de información sobre el manejo GPIO con Bananapi m2 cero, así que mi propósito a través de esta pequeña guía es hacer la vida un poco más fácil en cuento a este tema.
+Creé este repositorio debido a la falta de información sobre el manejo GPIO con Bananapi m2 cero, así que mi propósito a través de esta pequeña guía es hacer la vida un poco más fácil en cuento a este tema.
 
 ## Instalación Rápida
 
-#### Mediante la instalación rápida solo se tendrá que seleccionar su directorio una vez lo solicite                                                       (Ejemplo:/home/(su_directorio)).
+Mediante la instalación rápida solo se tendrá que seleccionar su directorio una vez lo solicite                                                       (Ejemplo:/home/(su_directorio)).
 
-#### Además de que se tendrá que tener en cuenta que la instalación tardara un poco y que tal vez tengan que ejecutar el script una segunda vez para evitar fallos que se hayan podido suscitar durante la instalación.
+Además de que se tendrá que tener en cuenta que la instalación tardara un poco y que tal vez tengan que ejecutar el script una segunda vez para evitar fallos que se hayan podido suscitar durante la instalación.
 
 	sudo git clone https://github.com/TuryRx/Banana-pi-m2-zero-GPIO.git
 	cd Bananapi-m2-zero-GPIO
@@ -21,7 +21,7 @@
 
 ## Instalación Manual 
 
-### Comenzando tendremos que instalar los siguientes repositorios.
+#### Comenzando tendremos que instalar los siguientes repositorios.
 
     sudo apt-get -y update
     sudo apt-get -y upgrade
@@ -30,12 +30,12 @@
     sudo add-apt-repository -y multiverse
     sudo add-apt-repository -y restricted
 
-### Luego realizaremos una actualización al sistema.
+#### Luego realizaremos una actualización al sistema.
 
     sudo apt-get update -y
     sudo apt-get upgrade -y
 
-### Una vez hecho esto, procederemos a la instalación de los paquetes que necesitaremos para poder utilizar las bibliotecas y dependencias que utilizaremos más adelante.
+#### Una vez hecho esto, procederemos a la instalación de los paquetes que necesitaremos para poder utilizar las bibliotecas y dependencias que utilizaremos más adelante.
 
     sudo apt-get install -y \
     inxi \
@@ -61,7 +61,7 @@
     lm-sensors \
     armbian-config \
 
-### Seguido esto vamos a descargar e instalar las librerías que utilizaremos con python3, dicho esto en este punto no instalaremos todas ya que existen algunas librerías que solo podremos instalar más adelante por falta de algunas dependencias que iremos resolviendo mediante avancemos con la instalación. 
+#### Seguido esto vamos a descargar e instalar las librerías que utilizaremos con python3, dicho esto en este punto no instalaremos todas ya que existen algunas librerías que solo podremos instalar más adelante por falta de algunas dependencias que iremos resolviendo mediante avancemos con la instalación. 
 
     sudo python3 -m pip install --upgrade pip setuptools wheel
     sudo pip3 install Adafruit-Blinka
@@ -73,7 +73,7 @@
     sudo pip3 install subprocess.run
     sudo pip3 install vcgencmd
 
-### En este punto procederemos a ejecutar la descarga e instalación de las siguientes dependencias que utilizaremos en base a los siguientes repositorios.
+#### En este punto procederemos a ejecutar la descarga e instalación de las siguientes dependencias que utilizaremos en base a los siguientes repositorios.
 
     git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
     cd Adafruit_Python_GPIO
@@ -113,7 +113,7 @@
     git clone https://github.com/TuryRx/Bananapi-m2-zero-GPIO-files.git
 
 
-### Perfecto una vez terminado esto terminaremos con la instalación de las bibliotecas faltantes de python3.
+#### Perfecto una vez terminado esto terminaremos con la instalación de las bibliotecas faltantes de python3.
 
     sudo pip3 install --upgrade ssd1306
     sudo pip3 install Adafruit-SSD1306
@@ -121,7 +121,7 @@
     sudo pip3 install --upgrade luma.oled
 
 
-### Ahora iremos a la carpeta Banana-Pi-m2-zero-GPIO-files y copiaremos los archivos a los siguientes directorios para habilitar el uso de los pines GPIO.
+#### Ahora iremos a la carpeta Banana-Pi-m2-zero-GPIO-files y copiaremos los archivos a los siguientes directorios para habilitar el uso de los pines GPIO.
 
     cd Bananapi-m2-zero-GPIO-files/bpi-servicee
     cd etc
@@ -139,7 +139,7 @@
 
     cd ..
 
-### Bueno ahora que hemos copiado los archivos a nuestro sistema solo nos queda cambiar algunas cosas dentro de uno de ellos para que podamos establecer el modelo de nuestra banana pi m2 zero.
+#### Bueno ahora que hemos copiado los archivos a nuestro sistema solo nos queda cambiar algunas cosas dentro de uno de ellos para que podamos establecer el modelo de nuestra banana pi m2 zero.
 
     sudo nano /var/lib/bananapi/board.sh
 
@@ -155,11 +155,11 @@
     BOARD_AUTO=bpi-m2z
     BOARD_OLD=bpi-m64
 
-### Ahora solo agregaremos a nuestro usuario a la lista i2c para poder trabajar con el bus de datos.
+#### Ahora solo agregaremos a nuestro usuario a la lista i2c para poder trabajar con el bus de datos.
 
     sudo adduser (your user) i2c
 
-### Para terminar recuerda que también tendrás que habilitar las opciones i2c, wl-gpio con armbian-config, así también te dejaré los enlaces de mis imágenes de armbian que e compilado tanto de escritorio como de servidor con la capacidad de hacer overclock si se requiere.
+#### Para terminar recuerda que también tendrás que habilitar las opciones i2c, wl-gpio con armbian-config, así también te dejaré los enlaces de mis imágenes de armbian que e compilado tanto de escritorio como de servidor con la capacidad de hacer overclock si se requiere.
 
     sudo armbian-config
 
@@ -187,7 +187,6 @@
     https://www.youtube.com/channel/UCsVnls-pcXUDKCafBRPJIsg
 
 ## Descargas <img src="https://user-images.githubusercontent.com/62630527/158044106-a52b6ef1-a65d-42d1-b376-79284df8721b.png" width="25px">
-#### Imagenes de Sistema
 
 #### Ubuntu Focal Servidor 
     https://www.mediafire.com/file/8bbmt4ovp1np3l5/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52.img_26-07-2021_optifine.rar/file
@@ -232,7 +231,7 @@ Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/e
 ![Captura de pantalla (152)](https://user-images.githubusercontent.com/62630527/128299716-25ec4b3f-ff32-4af0-93fe-31d0ab6f5d7f.png)
 ####
 
-### Referencias.
+## Referencias.
 
     https://github.com/adafruit/Adafruit_Python_GPIO
     https://github.com/adafruit/Adafruit_Python_SSD1306
