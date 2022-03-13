@@ -10,7 +10,7 @@
 
 ## Instalación Rápida
 
-#### Mediante la instalación rápida solo se tendrá que seleccionar su directorio una vez lo solicite (Ejemplo: /home/(su directorio)).
+#### Mediante la instalación rápida solo se tendrá que seleccionar su directorio una vez lo solicite                                                       (Ejemplo:/home/(su_directorio)).
 
 #### Además de que se tendrá que tener en cuenta que la instalación tardara un poco y que tal vez tengan que ejecutar el script una segunda vez para evitar fallos que se hayan podido suscitar durante la instalación.
 

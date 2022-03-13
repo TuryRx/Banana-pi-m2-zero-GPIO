@@ -10,7 +10,7 @@
 
 ## Quick Install
 
-#### With the Quick installation you will only have to select your directory once requested (Example: /home/(your directory)).
+#### With the Quick installation you will only have to select your directory once requested (Example:/home/(your_directory)).
 
 #### In addition to that you will have to take into account that the installation will take a while and that you may have to run the script a second time to avoid errors that may have arisen during the installation.
 
