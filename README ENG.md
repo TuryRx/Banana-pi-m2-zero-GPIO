@@ -12,7 +12,7 @@ I created this repo due to the lack of practical information for managing GPIOs 
 
 - [Quick Install](#quick-install-)
 - [Installation Manual](#installation-manual-)
-- [Enable GPIO e I2C](#)
+- [Enable GPIO e I2C](#enable-gpio)
 - [Usage examples](#usage-examples)
 - [Download Images](#downloads-)
 - [Links and Video.](#i-hope-you-like-and-serve-this-little-contribution-besides-here-i-leave-a-video-a-little-more-detail-about-it)
