@@ -24,7 +24,7 @@ Mediante la instalación rápida solo se tendrá que seleccionar su directorio u
 Además de que se tendrá que tener en cuenta que la instalación tardara un poco y que tal vez tengan que ejecutar el script una segunda vez para evitar fallos que se hayan podido suscitar durante la instalación.
 
 	sudo git clone https://github.com/TuryRx/Banana-pi-m2-zero-GPIO.git
-	cd Bananapi-m2-zero-GPIO
+	cd Banana-pi-m2-zero-GPIO
 	sudo chmod 777 -R Banana_Pi_M2Z_GPIO.sh
 	sudo ./Banana_Pi_M2Z_GPIO.sh
 
@@ -32,8 +32,8 @@ Además de que se tendrá que tener en cuenta que la instalación tardara un poc
 
 #### Comenzando tendremos que instalar los siguientes repositorios.
 
-    sudo apt-get -y update
-    sudo apt-get -y upgrade
+    sudo apt-get update -y
+    sudo apt-get upgrade -y
     sudo apt-get install -y software-properties-common
     sudo add-apt-repository -y universe
     sudo add-apt-repository -y multiverse

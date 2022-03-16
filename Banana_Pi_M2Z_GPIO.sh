@@ -81,6 +81,7 @@ echo ''
 
 sleep 2s
 
+sudo pip install setuptools
 sudo python3 -m pip install --upgrade pip setuptools wheel
 #sudo pip3 install adafruit-circuitpython-ssd1306
 #sudo pip3 install Adafruit-SSD1306
