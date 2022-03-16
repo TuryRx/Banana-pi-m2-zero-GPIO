@@ -12,6 +12,7 @@ Creé este repositorio debido a la falta de información sobre el manejo GPIO co
 
 - [Instalación Rápida](#instalación-rápida-)
 - [Instalación Manual](#instalación-manual-)
+- [Habilitar GPIO e I2C](#)
 - [Uso de ejemplos](#uso-de-ejemplos)
 - [Descarga de Imagenes](#descargas-)
 - [Links y Video.](#espero-les-guste-y-sirva-este-pequeño-aporte-ademas-aqui-les-dejo-un-video-un-poco-mas-detallado-sobre-esto)
@@ -27,6 +28,8 @@ Además de que se tendrá que tener en cuenta que la instalación tardara un poc
 	cd Banana-pi-m2-zero-GPIO
 	sudo chmod 777 -R Banana_Pi_M2Z_GPIO.sh
 	sudo ./Banana_Pi_M2Z_GPIO.sh
+
+Para terminar ahora solo quedaria habilitar GPIO e I2C
 
 ## Instalación Manual <img src="https://user-images.githubusercontent.com/62630527/158048709-40521673-c4d2-41a1-86b4-c931c01f3c12.png" width="25px"> 
 
@@ -167,6 +170,8 @@ Además de que se tendrá que tener en cuenta que la instalación tardara un poc
 #### Ahora solo agregaremos a nuestro usuario a la lista i2c para poder trabajar con el bus de datos.
 
     sudo adduser (your user) i2c
+
+## Habilitar GPIO
 
 #### Para terminar recuerda que también tendrás que habilitar las opciones i2c, wl-gpio con armbian-config, así también te dejaré los enlaces de mis imágenes de armbian que e compilado tanto de escritorio como de servidor con la capacidad de hacer overclock si se requiere.
 
