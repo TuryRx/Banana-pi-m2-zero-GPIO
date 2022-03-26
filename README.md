@@ -36,6 +36,7 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
 #### Comenzando tendremos que instalar los siguientes repositorios.
 
     sudo apt-get update -y
+    sudo apt-get upgrade -y
     sudo apt-get install -y software-properties-common
     sudo add-apt-repository -y universe
     sudo add-apt-repository -y multiverse
@@ -44,6 +45,7 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
 #### Luego realizaremos una actualización al sistema.
 
     sudo apt-get update -y
+    sudo apt-get upgrade -y
 
 #### Una vez hecho esto, procederemos a la instalación de los paquetes que necesitaremos para poder utilizar las bibliotecas y dependencias que utilizaremos más adelante.
 

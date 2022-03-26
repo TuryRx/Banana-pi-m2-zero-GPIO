@@ -22,7 +22,7 @@ echo ''
 sleep 2s
 
 sudo apt-get -y update
-#sudo apt-get -y upgrade
+sudo apt-get -y upgrade
 
 sleep 2s
 
@@ -37,7 +37,7 @@ sudo add-apt-repository -y restricted
 sleep 2s
 
 sudo apt-get -y update
-#sudo apt-get -y upgrade
+sudo apt-get -y upgrade
 
 sleep 2s
 

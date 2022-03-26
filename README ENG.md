@@ -36,6 +36,7 @@ To finish now it only remains to enable GPIO and I2C
 #### Starting we will have to install the following repositories.
 
     sudo apt-get update -y
+    sudo apt-get upgrade -y
     sudo apt-get install -y software-properties-common
     sudo add-apt-repository -y universe
     sudo add-apt-repository -y multiverse
@@ -44,6 +45,7 @@ To finish now it only remains to enable GPIO and I2C
 #### Then we will perform a small update to the system.
 
     sudo apt-get update -y
+    sudo apt-get upgrade -y
 
 #### Once this is done, we will proceed to the installation of the packages that we will need to be able to use the libraries and dependencies that we will see later.
 
