@@ -15,10 +15,10 @@ Creé este repositorio debido a la falta de información sobre el manejo GPIO co
 
 - [Instalación Rápida](#instalación-rápida-)
 - [Instalación Manual](#instalación-manual-)
-- [Habilitar GPIO e I2C](#habilitar-gpio)
-- [Uso de ejemplos](#uso-de-ejemplos)
+- [Habilitar GPIO e I2C](#habilitar-gpio-)
+- [Uso de ejemplos](#uso-de-ejemplos-)
 - [Descarga de Imagenes](#descargas-)
-- [Links y Video.](#espero-les-guste-y-sirva-este-pequeño-aporte-ademas-aqui-les-dejo-un-video-un-poco-mas-detallado-sobre-esto)
+- [Links y Video.](#links-y-videos-)
 - [Referencias](#referencias)
 
 ## Instalación Rápida <img src="https://user-images.githubusercontent.com/62630527/158048706-9cb18a7c-c450-4d83-bf7d-d96cbc0ffd7d.png" width="25px"> 
@@ -34,7 +34,7 @@ Además de que se tendrá que tener en cuenta que la instalación tardara un poc
 
 Para terminar ahora solo quedaria habilitar GPIO e I2C
 
-#### Nota:Imagen ya configurada para cualquier capacidad de SD en seccion de descargas
+#### Nota:Imagen ya configurada para cualquier capacidad de SD en seccion de descargas <img src="https://user-images.githubusercontent.com/62630527/160257385-a5a4f05f-4ab1-48f6-ae7f-80caf7d8b347.png" width="25px"> 
 
 | Usuario | Contraseña |
 | ------------- | ------------- |
@@ -193,7 +193,7 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
 
     sudo adduser (your user) i2c
 
-## Habilitar GPIO
+## Habilitar GPIO <img src="https://user-images.githubusercontent.com/62630527/160256271-0fc44f4d-ffac-4480-93c5-31cc1c7513f5.png" width="25px">
 
 #### Para terminar recuerda que también tendrás que habilitar las opciones i2c, wl-gpio con armbian-config, así también te dejaré los enlaces de mis imágenes de armbian que e compilado tanto de escritorio como de servidor con la capacidad de hacer overclock si se requiere.
 
@@ -212,10 +212,15 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
 ####
 ![Captura de pantalla (147)](https://user-images.githubusercontent.com/62630527/128293193-72e33041-f0e2-4968-8a41-365285fe30fc.png)
 
-#### Espero les guste y sirva este pequeño aporte, ademas aqui les dejo un video un poco mas detallado sobre esto.
+## Links y Videos <img src="https://user-images.githubusercontent.com/62630527/160256696-ebce1c73-df12-431a-aae9-53e9dc312bbb.png" width="25px">
+
+#### Espero les guste y sirva este pequeño aporte, ademas aqui les dejo dos videos un poco mas detallado sobre esto.
 
 	▶️ Banana PI M2 Zero Configuracion y Uso de GPIO ✔️
 	https://www.youtube.com/watch?v=LGlon4DOIwc&t=18s
+####
+    ▶️ Banana PI M2 Zero GPIO Script ✔️🔥
+    https://www.youtube.com/watch?v=yt4lLYp91zM
 
 #### Tambien les dejare el link de mi canal de youtube y los links de mis imagenes.
 
@@ -233,8 +238,9 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
 #### Ubuntu Focal Escritorio i3wm
     https://www.mediafire.com/file/e2a3x1l21kri4ai/Armbian_21.11.0-trunk_Bananapim2zero_focal_current_5.10.75_i3-wm_desktop_05-11-2021.rar/file
 #### Ubuntu Focal GPIO configurado
+    https://www.mediafire.com/file/ksehd394ezw8zuy/Bananapi_m2z_gpio_26_03_22.rar/file
 
-### Uso de ejemplos
+### Uso de ejemplos <img src="https://user-images.githubusercontent.com/62630527/160256612-06e00bf6-ee81-4ea0-a317-7d42f3c6196c.png" width="25px">
 
 Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/examples/ y un ejemplo para poder usar leds en Bananapi-m2-zero-GPIO-files/
 
