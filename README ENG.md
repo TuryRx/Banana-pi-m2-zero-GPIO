@@ -34,7 +34,7 @@ In addition to that you will have to take into account that the installation wil
 
 To finish now it only remains to enable GPIO and I2C
 
-### Note: Image already configured for any SD capacity in download section
+#### Note: Image already configured for any SD capacity in download section
 
 | User | Pass |
 | ------------- | ------------- |
@@ -233,6 +233,7 @@ To finish now it only remains to enable GPIO and I2C
     https://www.mediafire.com/file/314d3jlg5xuiv2t/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52_xfce_desktop_26-07-2021_optifine.rar/file
 #### Focal ubuntu based i3wm desktop image
     https://www.mediafire.com/file/e2a3x1l21kri4ai/Armbian_21.11.0-trunk_Bananapim2zero_focal_current_5.10.75_i3-wm_desktop_05-11-2021.rar/file
+#### Ubuntu Focal GPIO configured
 
 ### Usage examples
 
