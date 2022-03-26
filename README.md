@@ -1,4 +1,7 @@
 # Banana-pi-m2-zero-GPIO <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> 
+
+<img src="https://user-images.githubusercontent.com/62630527/160232659-95dd9d5a-aab8-4c9d-aada-07f9f4710b47.svg"> <img src="https://user-images.githubusercontent.com/62630527/160232639-911700a0-e6a5-451c-acd3-b546aaaee840.svg"> <img src="https://user-images.githubusercontent.com/62630527/160232603-39fd27c9-d257-471e-a773-0af8999e130a.svg">
+
 #### Proyecto de configuración y uso de pin gpio en la placa Banana Pi M2 Zero
 
 ![BANANAPI-ZERO-01 (1)](https://user-images.githubusercontent.com/62630527/128290176-105ffebd-346a-4c38-8d4a-be466738a2ef.png)
@@ -30,6 +33,13 @@ Además de que se tendrá que tener en cuenta que la instalación tardara un poc
 	sudo ./Banana_Pi_M2Z_GPIO.sh
 
 Para terminar ahora solo quedaria habilitar GPIO e I2C
+
+### Nota:Imagen ya configurada para cualquier capacidad de SD en seccion de descargas
+
+| Usuario | Contraseña |
+| ------------- | ------------- |
+| **roxas** | pi  |
+| **root**  | pi  |
 
 ## Instalación Manual <img src="https://user-images.githubusercontent.com/62630527/158048709-40521673-c4d2-41a1-86b4-c931c01f3c12.png" width="25px"> 
 
