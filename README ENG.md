@@ -36,7 +36,6 @@ To finish now it only remains to enable GPIO and I2C
 #### Starting we will have to install the following repositories.
 
     sudo apt-get update -y
-    sudo apt-get upgrade -y
     sudo apt-get install -y software-properties-common
     sudo add-apt-repository -y universe
     sudo add-apt-repository -y multiverse
@@ -45,7 +44,6 @@ To finish now it only remains to enable GPIO and I2C
 #### Then we will perform a small update to the system.
 
     sudo apt-get update -y
-    sudo apt-get upgrade -y
 
 #### Once this is done, we will proceed to the installation of the packages that we will need to be able to use the libraries and dependencies that we will see later.
 
@@ -71,19 +69,29 @@ To finish now it only remains to enable GPIO and I2C
     libjpeg-dev \
     python-dev \
     lm-sensors \
-    armbian-config \
+    unrar \
+    armbian-config
 
 #### Followed by this we will download and install the libraries that will be used with python3 to which at this point we will not install all that will be done after the download of dependencies that we need.
 
-    sudo python3 -m pip install --upgrade pip setuptools wheel
-    sudo pip3 install Adafruit-Blinka
-    sudo pip3 install smbus2
-    sudo pip3 install pusherclient
-    sudo pip3 install psutil
-    sudo pip3 install tweepy
-    sudo pip3 install feedparser
-    sudo pip3 install subprocess.run
-    sudo pip3 install vcgencmd
+    sudo pip install setuptools==58.3.0
+    sudo pip install wheel==0.37.0
+    sudo pip3 install pyserial==3.5
+    sudo pip3 install pyusb==1.2.1
+    sudo pip3 install pyftdi==0.53.3
+    sudo pip3 install Adafruit-PureIO==1.1.9
+    sudo pip3 install Adafruit-PlatformDetect==3.17.1
+    sudo pip3 install Adafruit-Blinka==6.15.0
+    sudo pip3 install smbus2==0.4.1
+    sudo pip3 install pusherclient==0.3.0
+    sudo pip3 install psutil==5.8.0
+    sudo pip3 install oauthlib==3.1.1
+    sudo pip3 install requests-oauthlib==1.3.0
+    sudo pip3 install tweepy==4.2.0
+    sudo pip3 install sgmllib3k==1.0.0
+    sudo pip3 install feedparser==6.0.8
+    sudo pip3 install subprocess.run==0.0.8
+    sudo pip3 install vcgencmd==0.1.1
 
 #### At this point we will proceed to execute the download of the dependencies that we will use based on the following repositories in addition to executing them.
 
@@ -94,6 +102,7 @@ To finish now it only remains to enable GPIO and I2C
 
     git clone https://github.com/BPI-SINOVOIP/BPI-WiringPi2.git
     cd BPI-WiringPi2
+    sudo chmod 777 build
     sudo ./build 
     cd
 
@@ -107,13 +116,13 @@ To finish now it only remains to enable GPIO and I2C
     sudo python3 setup.py install
     cd
 
-    git clone https://github.com/rm-hull/luma.oled.git
-    cd luma.oled
+    git clone https://github.com/BPI-SINOVOIP/RPi.GPIO.git
+    cd RPi.GPIO
     sudo python3 setup.py install
     cd
 
-    git clone https://github.com/BPI-SINOVOIP/RPi.GPIO.git
-    cd RPi.GPIO
+    git clone https://github.com/rm-hull/luma.oled.git
+    cd luma.oled
     sudo python3 setup.py install
     cd
 
@@ -127,10 +136,12 @@ To finish now it only remains to enable GPIO and I2C
 
 #### Perfect once this is finished we will finish with the installation of the missing python3 libraries.
 
-    sudo pip3 install --upgrade ssd1306
-    sudo pip3 install Adafruit-SSD1306
-    sudo pip3 install adafruit-circuitpython-ssd1306
-    sudo pip3 install --upgrade luma.oled
+    sudo pip3 install Adafruit-SSD1306==1.6.2
+    sudo pip3 install ssd1306==0.2.0
+    sudo pip3 install adafruit-circuitpython-busdevice==5.1.0
+    sudo pip3 install adafruit-circuitpython-framebuf==1.4.7
+    sudo pip3 install adafruit-circuitpython-ssd1306==2.12.2
+    sudo pip3 install luma.oled==3.8.1
 
 
 #### Now we go to the Banana-Pi-m2-zero-GPIO-files folder and copy the files to the following directories in order to enable the use of the GPIO pins.
