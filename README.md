@@ -192,6 +192,18 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
     BOARD_AUTO=bpi-m2z
     BOARD_OLD=bpi-m64
 
+#### Y ahora procederemos a copiar los archivos de ejemplo que les deje para el uso de los gpio.
+
+    cd Bananapi-m2-zero-GPIO-files
+    sudo chmod 777 m2z_led.py
+    sudo mv m2z_led.py /home/your-directory
+    sudo chmod 777 m2z_led_button.py
+    sudo mv m2z_led_button.py /home/your-directory
+    sudo chmod 777 m2z_button_state.py
+    sudo mv m2z_button_state.py /home/your-directory
+    sudo chmod 777 sys_stats.py
+    sudo mv sys_stats.py /home/your-directory/luma.examples/examples/
+
 #### Ahora solo agregaremos a nuestro usuario a la lista i2c para poder trabajar con el bus de datos.
 
     sudo adduser (your user) i2c
@@ -201,6 +213,15 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
 #### Para terminar recuerda que también tendrás que habilitar las opciones i2c, wl-gpio con armbian-config, así también te dejaré los enlaces de mis imágenes de armbian que e compilado tanto de escritorio como de servidor con la capacidad de hacer overclock si se requiere.
 
     sudo armbian-config
+
+#### Además, aquí les dejare unos comandos para poder configurar los pines desde terminal.
+
+| Uso | Comando |
+| ------------- | ------------- |
+| **Cambiar modo de pin** | gpio -g mode (Numero_de_Pin) (Estado: in o out) |
+| **Escribir estado de pin** | gpio -g write (Numero_de_Pin) (Modo: 1 o 0) |
+| **Leer estado de pin** | gpio -g read (Numero_de_Pin) |
+| **Activar o Desactivar resistencia pull-up** | gpio -g mode (Numero_de_Pin) (Modo: up o down) |
 
 ####
 ![Captura de pantalla (162)](https://user-images.githubusercontent.com/62630527/128302899-fa6cbcb4-d1e3-4b8e-8d18-7f09b977fc90.png)
