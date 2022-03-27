@@ -82,6 +82,9 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
     python-dev \
     lm-sensors \
     unrar \
+    libgpiod2 \
+    python3-libgpiod \
+    gpiod \
     armbian-config
 
 #### Seguido esto vamos a descargar e instalar las librerías que utilizaremos con python3, dicho esto en este punto no instalaremos todas ya que existen algunas librerías que solo podremos instalar más adelante por falta de algunas dependencias que iremos resolviendo mediante avancemos con la instalación. 

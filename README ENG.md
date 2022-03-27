@@ -82,6 +82,9 @@ To finish now it only remains to enable GPIO and I2C
     python-dev \
     lm-sensors \
     unrar \
+    libgpiod2 \
+    python3-libgpiod \
+    gpiod \
     armbian-config
 
 #### Followed by this we will download and install the libraries that will be used with python3 to which at this point we will not install all that will be done after the download of dependencies that we need.

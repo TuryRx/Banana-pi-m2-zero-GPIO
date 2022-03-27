@@ -71,6 +71,9 @@ libjpeg-dev \
 python-dev \
 lm-sensors \
 unrar \
+libgpiod2 \
+python3-libgpiod \
+gpiod \
 armbian-config
 
 sleep 2s
@@ -87,10 +90,10 @@ sudo pip install setuptools==58.3.0
 sudo pip install wheel==0.37.0
 sudo pip3 install pyserial==3.5
 sudo pip3 install pyusb==1.2.1
-sudo pip3 install pyftdi==0.53.3
+sudo pip3 install pyftdi==0.54.0
 sudo pip3 install Adafruit-PureIO==1.1.9
-sudo pip3 install Adafruit-PlatformDetect==3.17.1
-sudo pip3 install Adafruit-Blinka==6.15.0
+sudo pip3 install Adafruit-PlatformDetect==3.22.0
+sudo pip3 install Adafruit-Blinka==7.1.1
 #sudo python3 -m pip install --upgrade pip setuptools wheel
 #sudo pip3 install adafruit-circuitpython-ssd1306
 #sudo pip3 install Adafruit-SSD1306
@@ -240,11 +243,17 @@ cd /home/$directory
 cd Bananapi-m2-zero-GPIO-files
 sudo chmod 777 m2z_led.py
 sudo mv m2z_led.py /home/$directory 
+sudo chmod 777 m2z_led_button.py
+sudo mv m2z_led_button.py /home/$directory 
+sudo chmod 777 m2z_button_state.py
+sudo mv m2z_button_state.py /home/$directory 
 sudo chmod 777 sys_stats.py
 sudo mv sys_stats.py /home/$directory/luma.examples/examples/
 cd ..
 sudo mkdir gpio_files
 sudo mv m2z_led.py gpio_files/
+sudo mv m2z_led_button.py gpio_files/
+sudo mv m2z_button_state.py gpio_files/
 sudo mv Adafruit_Python_GPIO/ gpio_files/
 sudo mv Bananapi-m2-zero-GPIO-files/ gpio_files/
 sudo mv BPI-WiringPi2/ gpio_files/
@@ -255,6 +264,8 @@ sudo mv RPi.GPIO_BP/ gpio_files/
 sudo mv ssd1306/ gpio_files/
 ln -s /home/$directory/gpio_files/luma.examples/examples/sys_stats.py /home/$directory/
 ln -s /home/$directory/gpio_files/m2z_led.py /home/$directory/
+ln -s /home/$directory/gpio_files/m2z_led_button.py /home/$directory/
+ln -s /home/$directory/gpio_files/m2z_button_state.py /home/$directory/
 
 echo ''
 
