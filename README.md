@@ -214,7 +214,7 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
 
     sudo armbian-config
 
-#### Además, aquí les dejare unos comandos para poder configurar los pines desde terminal.
+#### Además, aquí les dejare unos comandos para poder configurar los pines desde terminal, no poner parentesis al ejecutar el comando (Ejemplo: sudo gpio -g mode 29 in).
 
 | Uso | Comando |
 | ------------- | ------------- |
@@ -261,12 +261,12 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
     https://www.mediafire.com/file/314d3jlg5xuiv2t/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52_xfce_desktop_26-07-2021_optifine.rar/file
 #### Ubuntu Focal Escritorio i3wm
     https://www.mediafire.com/file/e2a3x1l21kri4ai/Armbian_21.11.0-trunk_Bananapim2zero_focal_current_5.10.75_i3-wm_desktop_05-11-2021.rar/file
-#### Ubuntu Focal GPIO configurado
-    https://www.mediafire.com/file/ksehd394ezw8zuy/Bananapi_m2z_gpio_26_03_22.rar/file
+#### Ubuntu Focal GPIO configurado rev1.3 28-03-22
+    https://www.mediafire.com/file/rt3ww2bvezotqsg/Banana_Pi_M2Z_GPIO_28_03_22.rar/file
 
 ### Uso de ejemplos <img src="https://user-images.githubusercontent.com/62630527/160256612-06e00bf6-ee81-4ea0-a317-7d42f3c6196c.png" width="25px">
 
-Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/examples/ y un ejemplo para poder usar leds en Bananapi-m2-zero-GPIO-files/
+Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/examples/ y un ejemplo para poder usar leds y botones en Bananapi-m2-zero-GPIO-files/
 
 ### Ejemplo de uso de pantalla oled i2c
 
@@ -285,6 +285,13 @@ Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/e
 ![Captura de pantalla (159)](https://user-images.githubusercontent.com/62630527/128301457-98cf0493-a483-4967-9e84-8e9d9e6dd709.png)
 ####
 ![128302140-6df6db0c-94c3-4736-a85d-50e8a1b16386](https://user-images.githubusercontent.com/62630527/158041884-8fbf1baf-6368-441c-843a-d5501e43b1b7.jpg)
+####
+####
+####
+
+### Ejemplo coneccion de boton
+
+![Captura de pantalla (408)](https://user-images.githubusercontent.com/62630527/160311378-fca7bf30-a2e6-4323-9046-05a65778cf68.png)
 ####
 ####
 ####

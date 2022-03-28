@@ -215,7 +215,7 @@ To finish now it only remains to enable GPIO and I2C
 
     sudo armbian-config
 
-#### Also, here I will leave you some commands to be able to configure the pins from terminal.
+#### Also, here I will leave you some commands to be able to configure the pins from terminal, do not put parentheses when executing the command (Example: sudo gpio -g mode 29 in).
 
 | Usage | Command |
 | ------------- | ------------- |
@@ -262,12 +262,12 @@ To finish now it only remains to enable GPIO and I2C
     https://www.mediafire.com/file/314d3jlg5xuiv2t/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52_xfce_desktop_26-07-2021_optifine.rar/file
 #### Focal ubuntu based i3wm desktop image
     https://www.mediafire.com/file/e2a3x1l21kri4ai/Armbian_21.11.0-trunk_Bananapim2zero_focal_current_5.10.75_i3-wm_desktop_05-11-2021.rar/file
-#### Ubuntu Focal GPIO configured
-    https://www.mediafire.com/file/ksehd394ezw8zuy/Bananapi_m2z_gpio_26_03_22.rar/file
+#### Ubuntu Focal GPIO configured rev1.3 28-03-22
+    https://www.mediafire.com/file/rt3ww2bvezotqsg/Banana_Pi_M2Z_GPIO_28_03_22.rar/file
 
 ### Usage examples <img src="https://user-images.githubusercontent.com/62630527/160256612-06e00bf6-ee81-4ea0-a317-7d42f3c6196c.png" width="25px">
 
-You can find examples for the oled screen in the directory luma.examples / examples / and an example to be able to use leds in Bananapi-m2-zero-GPIO-files /
+You can find examples for the oled screen in the directory luma.examples / examples / and an example to be able to use leds and buttons in Bananapi-m2-zero-GPIO-files /
 
 ### i2c OLED display example
 
@@ -286,6 +286,13 @@ You can find examples for the oled screen in the directory luma.examples / examp
 ![Captura de pantalla (159)](https://user-images.githubusercontent.com/62630527/128301457-98cf0493-a483-4967-9e84-8e9d9e6dd709.png)
 ####
 ![128302140-6df6db0c-94c3-4736-a85d-50e8a1b16386](https://user-images.githubusercontent.com/62630527/158041884-8fbf1baf-6368-441c-843a-d5501e43b1b7.jpg)
+####
+####
+####
+
+### Example button connection
+
+![Captura de pantalla (408)](https://user-images.githubusercontent.com/62630527/160311378-fca7bf30-a2e6-4323-9046-05a65778cf68.png)
 ####
 ####
 ####
