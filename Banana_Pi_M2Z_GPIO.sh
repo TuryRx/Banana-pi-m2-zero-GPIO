@@ -240,20 +240,36 @@ echo 'pasv_min_port=40000' | sudo tee -a /etc/vsftpd.conf
 echo 'pasv_max_port=40100' | sudo tee -a /etc/vsftpd.conf
 
 cd /home/$directory
+sudo mkdir /home/$directory/gpio-examples
 cd Bananapi-m2-zero-GPIO-files
-sudo chmod 777 m2z_led.py
-sudo mv m2z_led.py /home/$directory 
-sudo chmod 777 m2z_led_button.py
-sudo mv m2z_led_button.py /home/$directory 
-sudo chmod 777 m2z_button_state.py
-sudo mv m2z_button_state.py /home/$directory 
+sudo chmod 777 led_m2z.py
+sudo mv led_m2z.py /home/$directory 
+sudo chmod 777 led_button_m2z.py
+sudo mv led_button_m2z.py /home/$directory 
+sudo chmod 777 button_state_m2z.py
+sudo mv button_state_m2z.py /home/$directory
+sudo chmod 777 button_event_m2z.py
+sudo mv button_event_m2z.py /home/$directory
+sudo chmod 777 gpio_funcion_m2z.py
+sudo mv gpio_funcion_m2z.py /home/$directory
+sudo chmod 777 info_board_m2z.py
+sudo mv info_board_m2z.py /home/$directory
+sudo chmod 777 info_gpio_m2z.py
+sudo mv info_gpio_m2z.py /home/$directory
+sudo chmod 777 pwm_m2z.py
+sudo mv pwm_m2z.py /home/$directory
 sudo chmod 777 sys_stats.py
 sudo mv sys_stats.py /home/$directory/luma.examples/examples/
 cd ..
 sudo mkdir gpio_files
-sudo mv m2z_led.py gpio_files/
-sudo mv m2z_led_button.py gpio_files/
-sudo mv m2z_button_state.py gpio_files/
+sudo mv led_m2z.py gpio_files/
+sudo mv led_button_m2z.py gpio_files/
+sudo mv button_state_m2z.py gpio_files/
+sudo mv button_event_m2z.py gpio_files/
+sudo mv gpio_funcion_m2z.py gpio_files/
+sudo mv info_board_m2z.py gpio_files/
+sudo mv info_gpio_m2z.py gpio_files/
+sudo mv pwm_m2z.py gpio_files/
 sudo mv Adafruit_Python_GPIO/ gpio_files/
 sudo mv Bananapi-m2-zero-GPIO-files/ gpio_files/
 sudo mv BPI-WiringPi2/ gpio_files/
@@ -262,10 +278,15 @@ sudo mv luma.oled/ gpio_files/
 sudo mv RPi.GPIO/ gpio_files/
 sudo mv RPi.GPIO_BP/ gpio_files/
 sudo mv ssd1306/ gpio_files/
-ln -s /home/$directory/gpio_files/luma.examples/examples/sys_stats.py /home/$directory/
-ln -s /home/$directory/gpio_files/m2z_led.py /home/$directory/
-ln -s /home/$directory/gpio_files/m2z_led_button.py /home/$directory/
-ln -s /home/$directory/gpio_files/m2z_button_state.py /home/$directory/
+ln -s /home/$directory/gpio_files/luma.examples/examples/sys_stats.py /home/$directory/gpio-examples/
+ln -s /home/$directory/gpio_files/led_m2z.py /home/$directory/gpio-examples/
+ln -s /home/$directory/gpio_files/led_button_m2z.py /home/$directory/gpio-examples/
+ln -s /home/$directory/gpio_files/button_state_m2z.py /home/$directory/gpio-examples/
+ln -s /home/$directory/gpio_files/button_event_m2z.py /home/$directory/gpio-examples/
+ln -s /home/$directory/gpio_files/gpio_funcion_m2z.py /home/$directory/gpio-examples/
+ln -s /home/$directory/gpio_files/info_board_m2z.py /home/$directory/gpio-examples/
+ln -s /home/$directory/gpio_files/info_gpio_m2z.py /home/$directory/gpio-examples/
+ln -s /home/$directory/gpio_files/pwm_m2z.py /home/$directory/gpio-examples/
 
 echo ''
 

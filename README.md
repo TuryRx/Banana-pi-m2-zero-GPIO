@@ -194,15 +194,25 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
 
 #### Y ahora procederemos a copiar los archivos de ejemplo que les deje para el uso de los gpio.
 
-    cd Bananapi-m2-zero-GPIO-files
-    sudo chmod 777 m2z_led.py
-    sudo mv m2z_led.py /home/your-directory
-    sudo chmod 777 m2z_led_button.py
-    sudo mv m2z_led_button.py /home/your-directory
-    sudo chmod 777 m2z_button_state.py
-    sudo mv m2z_button_state.py /home/your-directory
-    sudo chmod 777 sys_stats.py
-    sudo mv sys_stats.py /home/your-directory/luma.examples/examples/
+	cd Bananapi-m2-zero-GPIO-files
+	sudo chmod 777 led_m2z.py
+	sudo mv led_m2z.py /home/$directory 
+	sudo chmod 777 led_button_m2z.py
+	sudo mv led_button_m2z.py /home/$directory 
+	sudo chmod 777 button_state_m2z.py
+	sudo mv button_state_m2z.py /home/$directory
+	sudo chmod 777 button_event_m2z.py
+	sudo mv button_event_m2z.py /home/$directory
+	sudo chmod 777 gpio_funcion_m2z.py
+	sudo mv gpio_funcion_m2z.py /home/$directory
+	sudo chmod 777 info_board_m2z.py
+	sudo mv info_board_m2z.py /home/$directory
+	sudo chmod 777 info_gpio_m2z.py
+	sudo mv info_gpio_m2z.py /home/$directory
+	sudo chmod 777 pwm_m2z.py
+	sudo mv pwm_m2z.py /home/$directory
+	sudo chmod 777 sys_stats.py
+	sudo mv sys_stats.py /home/$directory/luma.examples/examples/
 
 #### Ahora solo agregaremos a nuestro usuario a la lista i2c para poder trabajar con el bus de datos.
 
