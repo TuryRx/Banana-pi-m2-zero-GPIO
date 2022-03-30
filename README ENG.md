@@ -297,6 +297,13 @@ You can find examples for the oled screen in the directory luma.examples / examp
 ####
 ####
 
+### Example button connection without resistor (must be configured as pull-down before using more info in section on enabling gpio Example: sudo gpio -1 mode 7 1)
+
+![Captura de pantalla (434)](https://user-images.githubusercontent.com/62630527/160729236-67d90492-4282-43ff-a8da-c683fd63b33a.png)
+####
+####
+####
+
 ### Location and function of physical gpio pins
 
 ![1e2e5830e341ad050857fd65e18ea8e5680841ec](https://user-images.githubusercontent.com/62630527/128299639-437c126b-73d8-4a9d-8c36-1213c70cff20.jpg)
