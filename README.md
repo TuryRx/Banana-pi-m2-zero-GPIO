@@ -17,8 +17,8 @@ Creé este repositorio debido a la falta de información sobre el manejo GPIO co
 - [Instalación Manual](#instalación-manual-)
 - [Habilitar GPIO e I2C](#habilitar-gpio-)
 - [Uso de ejemplos](#uso-de-ejemplos-)
-- [Descarga de Imagenes](#descargas-)
 - [Links y Video.](#links-y-videos-)
+- [Descarga de Imagenes](#descargas-)
 - [Referencias](#referencias)
 
 ## Instalación Rápida <img src="https://user-images.githubusercontent.com/62630527/158048706-9cb18a7c-c450-4d83-bf7d-d96cbc0ffd7d.png" width="25px"> 

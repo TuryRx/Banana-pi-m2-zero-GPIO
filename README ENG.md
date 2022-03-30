@@ -17,8 +17,8 @@ I created this repo due to the lack of practical information for managing GPIOs 
 - [Installation Manual](#installation-manual-)
 - [Enable GPIO e I2C](#enable-gpio-)
 - [Usage examples](#usage-examples-)
-- [Download Images](#downloads-)
 - [Links and Video.](#links-and-videos-)
+- [Download Images](#downloads-)
 - [References](#references)
 
 ## Quick Install <img src="https://user-images.githubusercontent.com/62630527/158048706-9cb18a7c-c450-4d83-bf7d-d96cbc0ffd7d.png" width="25px"> 
