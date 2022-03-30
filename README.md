@@ -236,34 +236,6 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
 ####
 ![Captura de pantalla (147)](https://user-images.githubusercontent.com/62630527/128293193-72e33041-f0e2-4968-8a41-365285fe30fc.png)
 
-## Links y Videos <img src="https://user-images.githubusercontent.com/62630527/160256696-ebce1c73-df12-431a-aae9-53e9dc312bbb.png" width="25px">
-
-#### Espero les guste y sirva este pequeño aporte, ademas aqui les dejo dos videos un poco mas detallado sobre esto.
-
-	▶️ Banana PI M2 Zero Configuracion y Uso de GPIO ✔️
-	https://www.youtube.com/watch?v=LGlon4DOIwc&t=18s
-####
-    ▶️ Banana PI M2 Zero GPIO Script ✔️🔥
-    https://www.youtube.com/watch?v=yt4lLYp91zM
-
-#### Tambien les dejare el link de mi canal de youtube y los links de mis imagenes.
-
-    TuryRx
-    https://www.youtube.com/channel/UCsVnls-pcXUDKCafBRPJIsg
-
-## Descargas <img src="https://user-images.githubusercontent.com/62630527/158044106-a52b6ef1-a65d-42d1-b376-79284df8721b.png" width="25px">
-
-#### Ubuntu Focal Servidor 
-    https://www.mediafire.com/file/8bbmt4ovp1np3l5/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52.img_26-07-2021_optifine.rar/file
-#### Ubuntu Focal Servidor Minima
-    https://www.mediafire.com/file/9mttmdoegw8nxeb/Armbian_21.11.0-trunk_Bananapim2zero_focal_current_5.10.75_minimal_05-11-2021.rar/file
-#### Ubuntu Focal Escritorio xfce 
-    https://www.mediafire.com/file/314d3jlg5xuiv2t/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52_xfce_desktop_26-07-2021_optifine.rar/file
-#### Ubuntu Focal Escritorio i3wm
-    https://www.mediafire.com/file/e2a3x1l21kri4ai/Armbian_21.11.0-trunk_Bananapim2zero_focal_current_5.10.75_i3-wm_desktop_05-11-2021.rar/file
-#### Ubuntu Focal GPIO configurado rev1.3 28-03-22
-    https://www.mediafire.com/file/rt3ww2bvezotqsg/Banana_Pi_M2Z_GPIO_28_03_22.rar/file
-
 ### Uso de ejemplos <img src="https://user-images.githubusercontent.com/62630527/160256612-06e00bf6-ee81-4ea0-a317-7d42f3c6196c.png" width="25px">
 
 Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/examples/ y un ejemplo para poder usar leds y botones en Bananapi-m2-zero-GPIO-files/
@@ -311,6 +283,34 @@ Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/e
 ####
 ![Captura de pantalla (152)](https://user-images.githubusercontent.com/62630527/128299716-25ec4b3f-ff32-4af0-93fe-31d0ab6f5d7f.png)
 ####
+
+## Links y Videos <img src="https://user-images.githubusercontent.com/62630527/160256696-ebce1c73-df12-431a-aae9-53e9dc312bbb.png" width="25px">
+
+#### Espero les guste y sirva este pequeño aporte, ademas aqui les dejo dos videos un poco mas detallado sobre esto.
+
+    ▶️ Banana PI M2 Zero Configuracion y Uso de GPIO ✔️
+    https://www.youtube.com/watch?v=LGlon4DOIwc&t=18s
+####
+    ▶️ Banana PI M2 Zero GPIO Script ✔️🔥
+    https://www.youtube.com/watch?v=yt4lLYp91zM
+
+#### Tambien les dejare el link de mi canal de youtube y los links de mis imagenes.
+
+    TuryRx
+    https://www.youtube.com/channel/UCsVnls-pcXUDKCafBRPJIsg
+
+## Descargas <img src="https://user-images.githubusercontent.com/62630527/158044106-a52b6ef1-a65d-42d1-b376-79284df8721b.png" width="25px">
+
+#### Ubuntu Focal Servidor 
+    https://www.mediafire.com/file/8bbmt4ovp1np3l5/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52.img_26-07-2021_optifine.rar/file
+#### Ubuntu Focal Servidor Minima
+    https://www.mediafire.com/file/9mttmdoegw8nxeb/Armbian_21.11.0-trunk_Bananapim2zero_focal_current_5.10.75_minimal_05-11-2021.rar/file
+#### Ubuntu Focal Escritorio xfce 
+    https://www.mediafire.com/file/314d3jlg5xuiv2t/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52_xfce_desktop_26-07-2021_optifine.rar/file
+#### Ubuntu Focal Escritorio i3wm
+    https://www.mediafire.com/file/e2a3x1l21kri4ai/Armbian_21.11.0-trunk_Bananapim2zero_focal_current_5.10.75_i3-wm_desktop_05-11-2021.rar/file
+#### Ubuntu Focal GPIO configurado rev1.3 28-03-22
+    https://www.mediafire.com/file/rt3ww2bvezotqsg/Banana_Pi_M2Z_GPIO_28_03_22.rar/file
 
 ## Referencias
 

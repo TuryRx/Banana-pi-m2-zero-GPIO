@@ -237,34 +237,6 @@ To finish now it only remains to enable GPIO and I2C
 ####
 ![Captura de pantalla (147)](https://user-images.githubusercontent.com/62630527/128293193-72e33041-f0e2-4968-8a41-365285fe30fc.png)
 
-## Links and Videos <img src="https://user-images.githubusercontent.com/62630527/160256696-ebce1c73-df12-431a-aae9-53e9dc312bbb.png" width="25px">
-
-#### I hope you like and serve this small contribution, also here I leave two videos a little more detailed about this.
-
-    ▶️ Banana PI M2 Zero Configuracion y Uso de GPIO ✔️
-    https://www.youtube.com/watch?v=LGlon4DOIwc&t=18s
-####
-    ▶️ Banana PI M2 Zero GPIO Script ✔️🔥
-    https://www.youtube.com/watch?v=yt4lLYp91zM
-
-#### I will also leave a link to my youtube channel and the links to my images.
-
-    TuryRx
-    https://www.youtube.com/channel/UCsVnls-pcXUDKCafBRPJIsg
-
-## Downloads <img src="https://user-images.githubusercontent.com/62630527/158044106-a52b6ef1-a65d-42d1-b376-79284df8721b.png" width="25px">
-
-#### Focal ubuntu based server image
-    https://www.mediafire.com/file/8bbmt4ovp1np3l5/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52.img_26-07-2021_optifine.rar/file
-#### Focal ubuntu based server minimal image
-    https://www.mediafire.com/file/9mttmdoegw8nxeb/Armbian_21.11.0-trunk_Bananapim2zero_focal_current_5.10.75_minimal_05-11-2021.rar/file
-#### Focal ubuntu based xfce desktop image
-    https://www.mediafire.com/file/314d3jlg5xuiv2t/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52_xfce_desktop_26-07-2021_optifine.rar/file
-#### Focal ubuntu based i3wm desktop image
-    https://www.mediafire.com/file/e2a3x1l21kri4ai/Armbian_21.11.0-trunk_Bananapim2zero_focal_current_5.10.75_i3-wm_desktop_05-11-2021.rar/file
-#### Ubuntu Focal GPIO configured rev1.3 28-03-22
-    https://www.mediafire.com/file/rt3ww2bvezotqsg/Banana_Pi_M2Z_GPIO_28_03_22.rar/file
-
 ### Usage examples <img src="https://user-images.githubusercontent.com/62630527/160256612-06e00bf6-ee81-4ea0-a317-7d42f3c6196c.png" width="25px">
 
 You can find examples for the oled screen in the directory luma.examples / examples / and an example to be able to use leds and buttons in Bananapi-m2-zero-GPIO-files /
@@ -312,6 +284,34 @@ You can find examples for the oled screen in the directory luma.examples / examp
 ####
 ![Captura de pantalla (152)](https://user-images.githubusercontent.com/62630527/128299716-25ec4b3f-ff32-4af0-93fe-31d0ab6f5d7f.png)
 ####
+
+## Links and Videos <img src="https://user-images.githubusercontent.com/62630527/160256696-ebce1c73-df12-431a-aae9-53e9dc312bbb.png" width="25px">
+
+#### I hope you like and serve this small contribution, also here I leave two videos a little more detailed about this.
+
+    ▶️ Banana PI M2 Zero Configuracion y Uso de GPIO ✔️
+    https://www.youtube.com/watch?v=LGlon4DOIwc&t=18s
+####
+    ▶️ Banana PI M2 Zero GPIO Script ✔️🔥
+    https://www.youtube.com/watch?v=yt4lLYp91zM
+
+#### I will also leave a link to my youtube channel and the links to my images.
+
+    TuryRx
+    https://www.youtube.com/channel/UCsVnls-pcXUDKCafBRPJIsg
+
+## Downloads <img src="https://user-images.githubusercontent.com/62630527/158044106-a52b6ef1-a65d-42d1-b376-79284df8721b.png" width="25px">
+
+#### Focal ubuntu based server image
+    https://www.mediafire.com/file/8bbmt4ovp1np3l5/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52.img_26-07-2021_optifine.rar/file
+#### Focal ubuntu based server minimal image
+    https://www.mediafire.com/file/9mttmdoegw8nxeb/Armbian_21.11.0-trunk_Bananapim2zero_focal_current_5.10.75_minimal_05-11-2021.rar/file
+#### Focal ubuntu based xfce desktop image
+    https://www.mediafire.com/file/314d3jlg5xuiv2t/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52_xfce_desktop_26-07-2021_optifine.rar/file
+#### Focal ubuntu based i3wm desktop image
+    https://www.mediafire.com/file/e2a3x1l21kri4ai/Armbian_21.11.0-trunk_Bananapim2zero_focal_current_5.10.75_i3-wm_desktop_05-11-2021.rar/file
+#### Ubuntu Focal GPIO configured rev1.3 28-03-22
+    https://www.mediafire.com/file/rt3ww2bvezotqsg/Banana_Pi_M2Z_GPIO_28_03_22.rar/file
 
 ### References
 
