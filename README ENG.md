@@ -264,6 +264,11 @@ You can find examples for the oled screen in the directory luma.examples / examp
 
 ### Example button connection
 
+![Captura de pantalla (436)](https://user-images.githubusercontent.com/62630527/160730409-b8420fa4-5265-4fd8-acde-5031f03a1b04.png)
+####
+####
+####
+
 ![Captura de pantalla (408)](https://user-images.githubusercontent.com/62630527/160311378-fca7bf30-a2e6-4323-9046-05a65778cf68.png)
 ####
 ####
