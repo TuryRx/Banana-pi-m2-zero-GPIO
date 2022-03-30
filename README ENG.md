@@ -215,14 +215,14 @@ To finish now it only remains to enable GPIO and I2C
 
     sudo armbian-config
 
-#### Also, here I will leave you some commands to be able to configure the pins from terminal, do not put parentheses when executing the command (Example: sudo gpio -g mode 29 in).
+#### Also, here I will leave you some commands to be able to configure the pins from terminal, do not put parentheses when executing the command (Example: sudo gpio -1 mode 29 in).
 
 | Usage | Command |
 | ------------- | ------------- |
-| **Change pin mode** | gpio -g mode (Pin_Number) (State: in o out) |
-| **Write pin status** | gpio -g write (Pin_Number) (Mode: 1 o 0) |
-| **Read pin status** | gpio -g read (Pin_Number) |
-| **Enable or Disable pull-up resistor** | gpio -g mode (Pin_Number) (Mode: up o down) |
+| **Change pin mode** | gpio -1 mode (Pin_Number) (State: in o out) |
+| **Write pin status** | gpio -1 write (Pin_Number) (Mode: 1 o 0) |
+| **Read pin status** | gpio -1 read (Pin_Number) |
+| **Enable or Disable pull-up resistor** | gpio -1 mode (Pin_Number) (Mode: up o down) |
 
 ####
 ![Captura de pantalla (162)](https://user-images.githubusercontent.com/62630527/128302899-fa6cbcb4-d1e3-4b8e-8d18-7f09b977fc90.png)
