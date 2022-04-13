@@ -16,6 +16,7 @@ Creé este repositorio debido a la falta de información sobre el manejo GPIO co
 - [Instalación Rápida](#instalación-rápida-)
 - [Instalación Manual](#instalación-manual-)
 - [Habilitar GPIO e I2C](#habilitar-gpio-)
+- [Ampliar Swap](#ampliar-swap-)
 - [Uso de ejemplos](#uso-de-ejemplos-)
 - [Links y Video.](#links-y-videos-)
 - [Descarga de Imagenes](#descargas-)
@@ -245,6 +246,21 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
 ![Captura de pantalla (146)](https://user-images.githubusercontent.com/62630527/128293175-557aca31-50dc-4637-a3d0-71c5de5278a8.png)
 ####
 ![Captura de pantalla (147)](https://user-images.githubusercontent.com/62630527/128293193-72e33041-f0e2-4968-8a41-365285fe30fc.png)
+
+### Ampliar Swap <img src="https://user-images.githubusercontent.com/62630527/163094821-b5a44e52-c43a-4b3d-91c1-2f87c83369bd.png" width="25px"> 
+
+A la hora de ampliar la memoria de intercambio(swap), se recomienda dejar por defecto solo el doble de la memoria actual, esto en caso de placas como esta aun que se puede establecer la que uno desee utilizar. 
+
+Para aumentar la memoria actual al doble solo ejecutar por defecto aumentara 245M.
+
+    sudo chmod 777 swap_memori.sh
+    sudo ./swap_memori.sh
+
+Para aumentar por otra cantidad modificar la línea (sudo fallocate -l 245M) por la cantidad que quieran.
+
+    sudo chmod 777 swap_memori.sh
+    sudo sed -i 's/sudo fallocate -l 245M /sudo fallocate -l (Cantidad #M o #G) /g' swap_memori.sh
+    sudo ./swap_memori.sh
 
 ### Uso de ejemplos <img src="https://user-images.githubusercontent.com/62630527/160256612-06e00bf6-ee81-4ea0-a317-7d42f3c6196c.png" width="25px">
 
