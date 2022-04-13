@@ -16,7 +16,7 @@ I created this repo due to the lack of practical information for managing GPIOs 
 - [Quick Install](#quick-install-)
 - [Installation Manual](#installation-manual-)
 - [Enable GPIO e I2C](#enable-gpio-)
-- [Extend Swap](#extend-swap-)
+- [Extend Swap](#expand-swap-)
 - [Usage examples](#usage-examples-)
 - [Links and Video.](#links-and-videos-)
 - [Download Images](#downloads-)
