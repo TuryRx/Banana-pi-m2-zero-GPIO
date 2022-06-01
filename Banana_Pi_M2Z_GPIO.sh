@@ -175,6 +175,7 @@ sudo pip3 install ssd1306==0.2.0
 sudo pip3 install adafruit-circuitpython-busdevice==5.1.0
 sudo pip3 install adafruit-circuitpython-framebuf==1.4.7
 sudo pip3 install adafruit-circuitpython-ssd1306==2.12.2
+sudo pip3 install cbor2==5.4.2
 sudo pip3 install luma.oled==3.8.1
 
 echo ''
