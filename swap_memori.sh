@@ -2,7 +2,7 @@
 #Created by Roxas
 #https://github.com/TuryRx/Banana-pi-m2-zero-GPIO
 
-echo 'Ampliar Memoria de Intercambio(Swap)'
+echo 'Ampliar Memoria de Intercambio(Swap)'  
 
 sleep 2s
 
