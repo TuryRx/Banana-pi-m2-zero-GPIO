@@ -9,8 +9,8 @@ sleep 2s
 #comandos para ver memoria swap (swapon –s)(free –m).
 sudo free -m
 #Cambiar 245M por la cantidad que quiera.
-#Para BPi o RPi poner solo la misma cantidad que la actual. 
-sudo fallocate -l 245M /swapfile  
+#Para BPi o RPi poner solo multiplos de la cantidad actual. 
+sudo fallocate -l 735M /swapfile  
 #Comprobar que se creo el archivo.
 sudo ls -lh /swapfile
 #Habilitar permisos para el archivo de memoria.
