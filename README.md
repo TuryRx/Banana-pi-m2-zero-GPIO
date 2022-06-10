@@ -369,12 +369,12 @@ Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/e
 ### Base Debian Buster <img src="https://user-images.githubusercontent.com/62630527/172993606-923c9b2d-11a6-480f-8cd9-c342bc28c42d.png" width="25px">
 
 #### Banana Pi M2 Zero Image Server 30-05-22
-    https://www.mediafire.com/file/ahqfobon44htbud/Armbian_22.08.0-trunk_Bananapim2zero_bullseye_current_5.15.43_Server.rar/file
+    https://www.mediafire.com/file/qquiv00mm8ago2a/Armbian_22.08.0-trunk_Bananapim2zero_buster_current_5.15.43_Server.rar/file
 
 ### Base Debian Bullseye <img src="https://user-images.githubusercontent.com/62630527/172993639-7163fab8-4268-4218-a267-a483b189e5ae.png" width="25px">
 
 #### Banana Pi M2 Zero Image Server 30-05-22
-    https://www.mediafire.com/file/qquiv00mm8ago2a/Armbian_22.08.0-trunk_Bananapim2zero_buster_current_5.15.43_Server.rar/file
+    https://www.mediafire.com/file/ahqfobon44htbud/Armbian_22.08.0-trunk_Bananapim2zero_bullseye_current_5.15.43_Server.rar/file
 
 ## Referencias
 

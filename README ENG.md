@@ -333,7 +333,7 @@ You can find examples for the oled screen in the directory luma.examples / examp
 
 ## Downloads <img src="https://user-images.githubusercontent.com/62630527/158044106-a52b6ef1-a65d-42d1-b376-79284df8721b.png" width="25px">
 
-## Old images 26-07-21 <img src="https://user-images.githubusercontent.com/62630527/172993373-e48489ba-2b27-4de8-9504-a8119bb25a78.png" width="25px">
+## Old Images 26-07-21 <img src="https://user-images.githubusercontent.com/62630527/172993373-e48489ba-2b27-4de8-9504-a8119bb25a78.png" width="25px">
 
 #### Focal ubuntu based server image
     https://www.mediafire.com/file/8bbmt4ovp1np3l5/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52.img_26-07-2021_optifine.rar/file
@@ -370,12 +370,12 @@ You can find examples for the oled screen in the directory luma.examples / examp
 ### Base Debian Buster <img src="https://user-images.githubusercontent.com/62630527/172993606-923c9b2d-11a6-480f-8cd9-c342bc28c42d.png" width="25px">
 
 #### Banana Pi M2 Zero Image Server 30-05-22
-    https://www.mediafire.com/file/ahqfobon44htbud/Armbian_22.08.0-trunk_Bananapim2zero_bullseye_current_5.15.43_Server.rar/file
+    https://www.mediafire.com/file/qquiv00mm8ago2a/Armbian_22.08.0-trunk_Bananapim2zero_buster_current_5.15.43_Server.rar/file
 
 ### Base Debian Bullseye <img src="https://user-images.githubusercontent.com/62630527/172993639-7163fab8-4268-4218-a267-a483b189e5ae.png" width="25px">
 
 #### Banana Pi M2 Zero Image Server 30-05-22
-    https://www.mediafire.com/file/qquiv00mm8ago2a/Armbian_22.08.0-trunk_Bananapim2zero_buster_current_5.15.43_Server.rar/file
+    https://www.mediafire.com/file/ahqfobon44htbud/Armbian_22.08.0-trunk_Bananapim2zero_bullseye_current_5.15.43_Server.rar/file
 
 ### References
 
