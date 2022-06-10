@@ -324,6 +324,9 @@ Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/e
 ####
     ▶️ Banana PI M2 Zero GPIO Script ✔️🔥
     https://www.youtube.com/watch?v=yt4lLYp91zM
+####
+    ▶️ Banana PI M2 Zero Nuevas Imagesnes ✔️🔥
+    https://www.youtube.com/watch?v=d5MLndnQ6w4&t=198s
 
 #### Tambien les dejare el link de mi canal de youtube y los links de mis imagenes.
 
