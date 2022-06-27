@@ -23,10 +23,10 @@ I created this repo due to the lack of practical information for managing GPIOs 
 - [References and Mentions](#references-and-mentions-)
 
 ## New features configuration and script v 1.4.9
-    -New gpio table with fixed pins (command: sudo gpioread)
-    -Increase swap memory to 1G automatic
+    -New gpio table with fixed pins (command: sudo gpioread) 
+    -Increase swap memory to 1G automatic  
     -Detection of events in gpio pins corrected and functional
-    -Implementation of corrected and functional use of pull up resistors
+    -Implementation of corrected and functional use of pull up resistors 
     -Examples available and use of gpio pins (https://github.com/TuryRx/Bananapi-m2-zero-GPIO-files)
 
 ## Quick Install <img src="https://user-images.githubusercontent.com/62630527/158048706-9cb18a7c-c450-4d83-bf7d-d96cbc0ffd7d.png" width="25px"> 
@@ -142,7 +142,6 @@ To finish now it only remains to enable GPIO and I2C
     sudo python3 setup.py install
     cd
 
-#### --------------------------------------------------------------
 ### Old Library
     git clone https://github.com/BPI-SINOVOIP/RPi.GPIO.git
     cd RPi.GPIO
@@ -154,7 +153,6 @@ To finish now it only remains to enable GPIO and I2C
     cd RPi.GPIO
     sudo python3 setup.py install
     cd
-#### --------------------------------------------------------------
 
     git clone https://github.com/rm-hull/luma.oled.git
     cd luma.oled
