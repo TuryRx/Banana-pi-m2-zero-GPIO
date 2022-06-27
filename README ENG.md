@@ -15,12 +15,19 @@ I created this repo due to the lack of practical information for managing GPIOs 
 
 - [Quick Install](#quick-install-)
 - [Installation Manual](#installation-manual-)
-- [Enable GPIO e I2C](#enable-gpio-)
+- [Enable GPIO (I2C,PWM,SPI,UART,OVERCLOCK)](#enable-gpio-)
 - [Extend Swap](#expand-swap-)
 - [Usage examples](#usage-examples-)
 - [Links and Video.](#links-and-videos-)
 - [Download Images](#downloads-)
-- [References](#references)
+- [References and Mentions](#references-and-mentions-)
+
+## New features configuration and script v 1.4.9
+    -New gpio table with fixed pins (command: sudo gpioread)
+    -Increase swap memory to 1G automatic
+    -Detection of events in gpio pins corrected and functional
+    -Implementation of corrected and functional use of pull up resistors
+    -Examples available and use of gpio pins (https://github.com/TuryRx/Bananapi-m2-zero-GPIO-files)
 
 ## Quick Install <img src="https://user-images.githubusercontent.com/62630527/158048706-9cb18a7c-c450-4d83-bf7d-d96cbc0ffd7d.png" width="25px"> 
 
@@ -86,6 +93,9 @@ To finish now it only remains to enable GPIO and I2C
     libgpiod2 \
     python3-libgpiod \
     gpiod \
+    python3-all \
+    python3-all-dev \
+    debhelper \
     armbian-config
 
 #### Followed by this we will download and install the libraries that will be used with python3 to which at this point we will not install all that will be done after the download of dependencies that we need.
@@ -132,10 +142,19 @@ To finish now it only remains to enable GPIO and I2C
     sudo python3 setup.py install
     cd
 
+#### --------------------------------------------------------------
+### Old Library
     git clone https://github.com/BPI-SINOVOIP/RPi.GPIO.git
     cd RPi.GPIO
     sudo python3 setup.py install
     cd
+
+### New Library
+    git clone https://github.com/GrazerComputerClub/RPi.GPIO.git
+    cd RPi.GPIO
+    sudo python3 setup.py install
+    cd
+#### --------------------------------------------------------------
 
     git clone https://github.com/rm-hull/luma.oled.git
     cd luma.oled
@@ -177,6 +196,16 @@ To finish now it only remains to enable GPIO and I2C
     sudo cp -r * /var
 
     cd ..
+
+#### We will also make the copy of the files for the new gpio pin table with the BMC correction that we will execute with the command (sudo gpioread)
+
+    sudo mv gpioread.sh /usr/local/bin/gpioread
+    sudo chmod o+x /usr/local/bin/gpioread
+    sudo chmod 777 /usr/local/bin/gpioread
+    
+    sudo touch /var/lib/bananapi/gpio
+    sudo chmod o+x /var/lib/bananapi/gpio
+    sudo chmod 777 /var/lib/bananapi/gpio
 
 #### Well now that we have copied the files to our system we only have to change a few things within one of them so that we can establish the model of our banana pi m2 zero.
 
@@ -380,6 +409,16 @@ You can find examples for the oled screen in the directory luma.examples / examp
 #### Banana Pi M2 Zero Image Server 30-05-22
     https://www.mediafire.com/file/ahqfobon44htbud/Armbian_22.08.0-trunk_Bananapim2zero_bullseye_current_5.15.43_Server.rar/file
 
+### References and Mentions
+
+### Mentions
+
+#### Special thanks to bontango for help with pin failure with use of new library as well as help in use of UART communication
+
+     https://www.lisy.dev/
+     https://forum.banana-pi.org/u/bontango
+     https://forum.banana-pi.org/t/configuration-and-use-of-gpio-bpi-m2-zero/13179/79
+
 ### References
 
     https://github.com/adafruit/Adafruit_Python_GPIO
@@ -402,4 +441,5 @@ You can find examples for the oled screen in the directory luma.examples / examp
     https://programmerclick.com/article/48301644742/
     https://github.com/BPI-SINOVOIP/RPi.GPIO
     https://github.com/LeMaker/RPi.GPIO_BP/blob/bananapro/test/info_RPi.GPIO.py
+    https://github.com/GrazerComputerClub/RPi.GPIO
     https://github.com/BPI-SINOVOIP/BPI-WiringPi2

@@ -15,12 +15,20 @@ Creé este repositorio debido a la falta de información sobre el manejo GPIO co
 
 - [Instalación Rápida](#instalación-rápida-)
 - [Instalación Manual](#instalación-manual-)
-- [Habilitar GPIO e I2C](#habilitar-gpio-)
+- [Habilitar GPIO (I2C,PWM,SPI,UART,OVERCLOCK)](#habilitar-gpio-)
 - [Ampliar Swap](#ampliar-swap-)
 - [Uso de ejemplos](#uso-de-ejemplos-)
 - [Links y Video.](#links-y-videos-)
 - [Descarga de Imagenes](#descargas-)
-- [Referencias](#referencias)
+- [Referencias y Menciones](#referencias-y-menciones-)
+
+##Nuevas características configuración y script v 1.4.9
+    -Nueva tabla gpio con pines corregidos (comando: sudo gpioread)
+    -Incremento de memoria swap a 1G automático
+    -Detección de eventos en pines gpio corregida y funcional
+    -Implementación de uso de resistencias pull up corregida y funcional 
+    -Ejemplos disponibles y uso de pines gpio (https://github.com/TuryRx/Bananapi-m2-zero-GPIO-files)
+
 
 ## Instalación Rápida <img src="https://user-images.githubusercontent.com/62630527/158048706-9cb18a7c-c450-4d83-bf7d-d96cbc0ffd7d.png" width="25px"> 
 
@@ -86,6 +94,9 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
     libgpiod2 \
     python3-libgpiod \
     gpiod \
+    python3-all \
+    python3-all-dev \
+    debhelper \
     armbian-config
 
 #### Seguido esto vamos a descargar e instalar las librerías que utilizaremos con python3, dicho esto en este punto no instalaremos todas ya que existen algunas librerías que solo podremos instalar más adelante por falta de algunas dependencias que iremos resolviendo mediante avancemos con la instalación. 
@@ -132,10 +143,19 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
     sudo python3 setup.py install
     cd
 
+#### --------------------------------------------------------------
+### Antigua Libreria
     git clone https://github.com/BPI-SINOVOIP/RPi.GPIO.git
     cd RPi.GPIO
     sudo python3 setup.py install
     cd
+
+### Nueva Libreria
+    git clone https://github.com/GrazerComputerClub/RPi.GPIO.git
+    cd RPi.GPIO
+    sudo python3 setup.py install
+    cd
+#### --------------------------------------------------------------
 
     git clone https://github.com/rm-hull/luma.oled.git
     cd luma.oled
@@ -176,6 +196,16 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
     sudo cp -r * /var
 
     cd ..
+
+#### Igualmente realizaremos la copia de los archivos para la nueva tabla de pines gpio con la corrección de BMC que la ejecutaremos con el comando (sudo gpioread)
+
+    sudo mv gpioread.sh /usr/local/bin/gpioread
+    sudo chmod o+x /usr/local/bin/gpioread
+    sudo chmod 777 /usr/local/bin/gpioread
+    
+    sudo touch /var/lib/bananapi/gpio
+    sudo chmod o+x /var/lib/bananapi/gpio
+    sudo chmod 777 /var/lib/bananapi/gpio
 
 #### Bueno ahora que hemos copiado los archivos a nuestro sistema solo nos queda cambiar algunas cosas dentro de uno de ellos para que podamos establecer el modelo de nuestra banana pi m2 zero.
 
@@ -379,7 +409,17 @@ Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/e
 #### Banana Pi M2 Zero Image Server 30-05-22
     https://www.mediafire.com/file/ahqfobon44htbud/Armbian_22.08.0-trunk_Bananapim2zero_bullseye_current_5.15.43_Server.rar/file
 
-## Referencias
+## Referencias y Menciones
+
+### Menciones
+
+#### Agradecimiento especial a bontango por ayuda con fallo de pines con uso de nueva librería ademadas de ayuda en uso de comunicación UART 
+
+    https://www.lisy.dev/
+    https://forum.banana-pi.org/u/bontango
+    https://forum.banana-pi.org/t/configuracion-y-uso-de-gpio-bpi-m2-zero/13179/79
+
+### Referencias
 
     https://github.com/adafruit/Adafruit_Python_GPIO
     https://github.com/adafruit/Adafruit_Python_SSD1306
@@ -401,4 +441,5 @@ Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/e
     https://programmerclick.com/article/48301644742/
     https://github.com/BPI-SINOVOIP/RPi.GPIO
     https://github.com/LeMaker/RPi.GPIO_BP/blob/bananapro/test/info_RPi.GPIO.py
+    https://github.com/GrazerComputerClub/RPi.GPIO
     https://github.com/BPI-SINOVOIP/BPI-WiringPi2

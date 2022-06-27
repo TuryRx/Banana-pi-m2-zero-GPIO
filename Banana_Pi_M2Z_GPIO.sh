@@ -9,7 +9,7 @@ echo '                                       |__/                               
 echo ''
 
 echo '          Welcome to GPIO Installation Wizard for Bananapi m2 zero'
-echo '                                    rev 1.2                                  '
+echo '                                    rev 1.4.9                                  '
 
 sleep 5s
 
@@ -74,6 +74,9 @@ unrar \
 libgpiod2 \
 python3-libgpiod \
 gpiod \
+python3-all \
+python3-all-dev \
+debhelper \
 armbian-config
 
 sleep 2s
@@ -130,7 +133,8 @@ git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
 git clone https://github.com/BPI-SINOVOIP/BPI-WiringPi2.git
 git clone https://github.com/LeMaker/RPi.GPIO_BP -b bananapi
 git clone https://github.com/codelectron/ssd1306.git
-git clone https://github.com/BPI-SINOVOIP/RPi.GPIO.git
+##git clone https://github.com/BPI-SINOVOIP/RPi.GPIO.git //Old library
+git clone https://github.com/GrazerComputerClub/RPi.GPIO.git
 sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/luma.examples.rar /home/$directory
 sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/luma.oled.rar /home/$directory
 
@@ -224,6 +228,20 @@ sleep 2s
 
 echo ''
 
+echo '------------------------------Increase swap memory----------------------------'
+
+echo ''
+
+sleep 2s
+
+cd /home/$directory/Banana-pi-m2-zero-GPIO/
+sudo chmod 777 swap_memori.sh
+sudo ./swap_memori.sh
+
+sleep 2s
+
+echo ''
+
 echo '---------------Completing System Files and Enable ftp in Sistem---------------'  
 
 echo ''
@@ -261,6 +279,13 @@ sudo chmod 777 pwm_m2z.py
 sudo mv pwm_m2z.py /home/$directory
 sudo chmod 777 sys_stats.py
 sudo mv sys_stats.py /home/$directory/luma.examples/examples/
+sudo chmod 777 gpioread.sh
+sudo mv gpioread.sh /usr/local/bin/gpioread
+sudo chmod o+x /usr/local/bin/gpioread
+sudo chmod 777 /usr/local/bin/gpioread
+sudo touch /var/lib/bananapi/gpio
+sudo chmod o+x /var/lib/bananapi/gpio
+sudo chmod 777 /var/lib/bananapi/gpio
 cd ..
 sudo mkdir gpio_files
 sudo mv led_m2z.py gpio_files/
