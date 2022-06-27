@@ -22,7 +22,8 @@ I created this repo due to the lack of practical information for managing GPIOs 
 - [Download Images](#downloads-)
 - [References and Mentions](#references-and-mentions-)
 
-## New features configuration and script v 1.4.9
+## New features configuration and script v 1.4.9 <img src="https://user-images.githubusercontent.com/62630527/175873787-3455ffdd-ec83-48ef-89b8-fb01877ed8f9.png" width="25px" height="25px">
+
     -New gpio table with fixed pins (command: sudo gpioread) 
     -Increase swap memory to 1G automatic  
     -Detection of events in gpio pins corrected and functional

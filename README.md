@@ -22,7 +22,7 @@ Creé este repositorio debido a la falta de información sobre el manejo GPIO co
 - [Descarga de Imagenes](#descargas-)
 - [Referencias y Menciones](#referencias-y-menciones-)
 
-## Nuevas características configuración y script v 1.4.9
+## Nuevas características configuración y script v 1.4.9 <img src="https://user-images.githubusercontent.com/62630527/175873787-3455ffdd-ec83-48ef-89b8-fb01877ed8f9.png" width="25px" height="25px">
 
     -Nueva tabla gpio con pines corregidos (comando: sudo gpioread)
     -Incremento de memoria swap a 1G automático 
