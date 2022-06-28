@@ -20,7 +20,7 @@ Creé este repositorio debido a la falta de información sobre el manejo GPIO co
 - [Uso de ejemplos](#uso-de-ejemplos-)
 - [Links y Video.](#links-y-videos-)
 - [Descarga de Imagenes](#descargas-)
-- [Referencias y Menciones](#referencias-y-menciones-)
+- [Referencias y Menciones](#referencias-y-menciones)
 
 ## Nuevas características configuración y script v 1.4.9 <img src="https://user-images.githubusercontent.com/62630527/175873787-3455ffdd-ec83-48ef-89b8-fb01877ed8f9.png" width="25px" height="25px">
 
@@ -251,7 +251,7 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
 
 ## Habilitar GPIO <img src="https://user-images.githubusercontent.com/62630527/160256271-0fc44f4d-ffac-4480-93c5-31cc1c7513f5.png" width="25px">
 
-#### Para terminar recuerda que también tendrás que habilitar las opciones i2c, wl-gpio con armbian-config, así también te dejaré los enlaces de mis imágenes de armbian que e compilado tanto de escritorio como de servidor con la capacidad de hacer overclock si se requiere.
+#### Para terminar recuerda que también tendrás que habilitar las opciones i2c, wl-gpio, pwm, cpu y uart con armbian-config, así también te dejaré los enlaces de mis imágenes de armbian que e compilado tanto de escritorio como de servidor con la capacidad de hacer overclock si se requiere.
 
     sudo armbian-config
 
@@ -264,85 +264,79 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
 | **Leer estado de pin** | gpio -1 read (Numero_de_Pin) |
 | **Activar o Desactivar resistencia pull-up** | gpio -1 mode (Numero_de_Pin) (Modo: up o down) |
 
+### Habilitación de pines gpio (I2C,PWM,SPI,UART,OVERCLOCK)
+
 ####
-![Captura de pantalla (162)](https://user-images.githubusercontent.com/62630527/128302899-fa6cbcb4-d1e3-4b8e-8d18-7f09b977fc90.png)
+![1](https://user-images.githubusercontent.com/62630527/176098391-8aeb7341-da7b-4801-abf5-540abe3109dc.PNG)
 ####
-![Captura de pantalla (143)](https://user-images.githubusercontent.com/62630527/128293079-2cd62263-1e90-4949-b5a9-9230550df60b.png)
+![2](https://user-images.githubusercontent.com/62630527/176098464-dc6b2e99-87a9-49e1-a080-4e38984751db.PNG)
 ####
-![Captura de pantalla (144)](https://user-images.githubusercontent.com/62630527/128293135-af583cce-9fe3-4f48-b71a-ab24ceff3a75.png)
+![3](https://user-images.githubusercontent.com/62630527/176098493-a1244f7d-3881-46b2-a092-42cf4af26443.PNG)
 ####
-![Captura de pantalla (145)](https://user-images.githubusercontent.com/62630527/128293154-3032c3c3-9f17-4ff1-913d-56012ba3de52.png)
+![4](https://user-images.githubusercontent.com/62630527/176098519-cb91dbd3-1c50-4102-8863-2c31f2e48843.PNG)
 ####
-![Captura de pantalla (146)](https://user-images.githubusercontent.com/62630527/128293175-557aca31-50dc-4637-a3d0-71c5de5278a8.png)
-####
-![Captura de pantalla (147)](https://user-images.githubusercontent.com/62630527/128293193-72e33041-f0e2-4968-8a41-365285fe30fc.png)
+![5](https://user-images.githubusercontent.com/62630527/176098535-1e0e271e-efa2-4d2a-9b33-d79351db8bed.PNG)
 
 ### Ampliar Swap <img src="https://user-images.githubusercontent.com/62630527/163094821-b5a44e52-c43a-4b3d-91c1-2f87c83369bd.png" width="25px"> 
 
 A la hora de ampliar la memoria de intercambio(swap), se recomienda dejar por defecto solo el doble de la memoria actual, esto en caso de placas como esta aun que se puede establecer la que uno desee utilizar. 
 
-Para aumentar la memoria actual al doble solo ejecutar por defecto aumentara 245M.
+Para aumentar la memoria actual al doble solo ejecutar por defecto aumentara 735M para tener 1G.
 
     sudo chmod 777 swap_memori.sh
     sudo ./swap_memori.sh
 
-Para aumentar por otra cantidad modificar la línea (sudo fallocate -l 245M) por la cantidad que quieran.
+Para aumentar por otra cantidad modificar la línea (sudo fallocate -l 735M) por la cantidad que quieran.
 
     sudo chmod 777 swap_memori.sh
-    sudo sed -i 's/sudo fallocate -l 245M /sudo fallocate -l (Cantidad #M o #G) /g' swap_memori.sh
+    sudo sed -i 's/sudo fallocate -l 735M /sudo fallocate -l (Cantidad #M o #G) /g' swap_memori.sh
     sudo ./swap_memori.sh
 
 ### Uso de ejemplos <img src="https://user-images.githubusercontent.com/62630527/160256612-06e00bf6-ee81-4ea0-a317-7d42f3c6196c.png" width="25px">
 
-Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/examples/ y un ejemplo para poder usar leds y botones en Bananapi-m2-zero-GPIO-files/
+Puedes encontrar ejemplos para la pantalla oled en el directorio /home/$user/gpio_files/luma.examples/examples/ y otros ejemplos sobre uso de leds, botones, eventos, pull_up, pwm, informacion de sistema y deteccion de eventos en el directorio /home/$user/gpio-examples/ 
 
-### Ejemplo de uso de pantalla oled i2c
+### Tabla de pines gpio mediante terminal (sudo gpioread)
 
+![6](https://user-images.githubusercontent.com/62630527/176101146-0fb914c6-8f1c-4634-ba11-dbea3f15180f.PNG)
 ####
-![Captura de pantalla (158)](https://user-images.githubusercontent.com/62630527/128301389-21afebe4-b82c-44b0-a1c0-3060e1c2a4d9.png)
+
+### Deteccion de direccion i2c de dispositivos (sudo i2cdetect -y 0)
+
+![9](https://user-images.githubusercontent.com/62630527/176101171-2a72f677-3944-4753-aed8-9ed432dedb66.PNG)
 ####
-![128302021-96c60a6c-ece6-4109-b3a1-a1b8c9d0955d](https://user-images.githubusercontent.com/62630527/158041860-7ac22c87-8d14-4949-b07c-3a01c07ea80c.jpg)
+
+### Ejemplos de uso de pantalla oled i2c
+
+![7](https://user-images.githubusercontent.com/62630527/176101345-bc48c74c-8161-4502-8d55-eb5802301307.PNG)
 ####
-![128302087-cf29cb78-10c1-4c27-a41d-53d6d2185d88](https://user-images.githubusercontent.com/62630527/158041864-3a8d022d-a383-4bfd-9388-f67e715da29f.jpg)
+![oled](https://user-images.githubusercontent.com/62630527/176106171-b21df7ee-d24a-4f4d-8b7a-014cc82f2d80.jpg)
 ####
+
+### Ejemplo informacion de sistema con pantalla oled i2c
+
+![8](https://user-images.githubusercontent.com/62630527/176101491-75df82de-12f1-406d-aedb-c7f87fea6381.PNG)
 ####
+![sys_info](https://user-images.githubusercontent.com/62630527/176106194-a8ac4df0-198f-464d-99b1-cd5483170b6f.jpg)
 ####
 
 ### Ejemplo de uso de led
 
-![Captura de pantalla (159)](https://user-images.githubusercontent.com/62630527/128301457-98cf0493-a483-4967-9e84-8e9d9e6dd709.png)
+![10](https://user-images.githubusercontent.com/62630527/176103746-0dbd4700-3456-4118-ae95-bdbda1e9a4ea.PNG)
 ####
-![128302140-6df6db0c-94c3-4736-a85d-50e8a1b16386](https://user-images.githubusercontent.com/62630527/158041884-8fbf1baf-6368-441c-843a-d5501e43b1b7.jpg)
-####
-####
+![led](https://user-images.githubusercontent.com/62630527/176106154-f7822c22-77c9-4111-93a5-76cf7c97efd0.jpg)
 ####
 
-### Ejemplo coneccion de boton
+### Ejemplo coneccion de boton pull_up
 
-![Captura de pantalla (436)](https://user-images.githubusercontent.com/62630527/160730409-b8420fa4-5265-4fd8-acde-5031f03a1b04.png)
+![11](https://user-images.githubusercontent.com/62630527/176103757-7448a539-867d-430e-9bb1-27a20e619353.PNG)
 ####
-####
-####
-
-![Captura de pantalla (408)](https://user-images.githubusercontent.com/62630527/160311378-fca7bf30-a2e6-4323-9046-05a65778cf68.png)
-####
-####
-####
-
-### Ejemplo coneccion de boton sin resistencia (hay que configurar como pull-down antes de utiliza mas info en apartado de habilitar gpio Ejemplo: sudo gpio -1 mode 7 1)
-
-![Captura de pantalla (434)](https://user-images.githubusercontent.com/62630527/160729236-67d90492-4282-43ff-a8da-c683fd63b33a.png)
-####
-####
+![button](https://user-images.githubusercontent.com/62630527/176106138-65b30851-8ca3-4313-b3f3-d003d0803f18.jpg)
 ####
 
 ### Ubicacion y funciones de pines fisicos
 
 ![1e2e5830e341ad050857fd65e18ea8e5680841ec](https://user-images.githubusercontent.com/62630527/128299639-437c126b-73d8-4a9d-8c36-1213c70cff20.jpg)
-####
-![Captura de pantalla (151)](https://user-images.githubusercontent.com/62630527/128299694-65b2f036-1649-4a10-b104-3c22de13d33f.png)
-####
-![Captura de pantalla (152)](https://user-images.githubusercontent.com/62630527/128299716-25ec4b3f-ff32-4af0-93fe-31d0ab6f5d7f.png)
 ####
 
 ## Links y Videos <img src="https://user-images.githubusercontent.com/62630527/160256696-ebce1c73-df12-431a-aae9-53e9dc312bbb.png" width="25px">
@@ -360,12 +354,14 @@ Puedes encontrar ejemplos para la pantalla oled en el directorio luma.examples/e
 
 #### Tambien les dejare el link de mi canal de youtube y los links de mis imagenes.
 
-    TuryRx
+    ▶️ TuryRx 🔥
     https://www.youtube.com/channel/UCsVnls-pcXUDKCafBRPJIsg
 
 ## Descargas <img src="https://user-images.githubusercontent.com/62630527/158044106-a52b6ef1-a65d-42d1-b376-79284df8721b.png" width="25px">
 
-## Imagenes Viejas 26-07-21 <img src="https://user-images.githubusercontent.com/62630527/172993373-e48489ba-2b27-4de8-9504-a8119bb25a78.png" width="25px">
+## Imagenes 26-07-21 <img src="https://user-images.githubusercontent.com/62630527/172993373-e48489ba-2b27-4de8-9504-a8119bb25a78.png" width="25px">
+
+### Base Ubuntu Focal <img src="https://user-images.githubusercontent.com/62630527/172993496-2ac24566-8881-4862-a976-69f49d257cfc.png" width="25px">
 
 #### Ubuntu Focal Servidor 
     https://www.mediafire.com/file/8bbmt4ovp1np3l5/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52.img_26-07-2021_optifine.rar/file
