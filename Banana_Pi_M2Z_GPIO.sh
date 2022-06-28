@@ -313,6 +313,7 @@ sudo mv luma.oled/ gpio_files/
 sudo mv RPi.GPIO/ gpio_files/
 sudo mv RPi.GPIO_BP/ gpio_files/
 sudo mv ssd1306/ gpio_files/
+sudo chmod 777 -R  * gpio_files/luma.examples/examples/
 ln -s /home/$directory/gpio_files/luma.examples/examples/sys_stats.py /home/$directory/gpio-examples/
 ln -s /home/$directory/gpio_files/led_m2z.py /home/$directory/gpio-examples/
 ln -s /home/$directory/gpio_files/led_button_m2z.py /home/$directory/gpio-examples/

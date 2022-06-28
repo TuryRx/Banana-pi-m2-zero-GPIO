@@ -241,6 +241,12 @@ To finish now it only remains to enable GPIO and I2C
 	sudo mv info_gpio_m2z.py /home/$directory
 	sudo chmod 777 pwm_m2z.py
 	sudo mv pwm_m2z.py /home/$directory
+    sudo chmod 777 button_pull_up_m2z.py
+    sudo mv button_pull_up_m2z.py /home/$directory
+    sudo chmod 777 gpio_read_pin_m2z.py
+    sudo mv gpio_read_pin_m2z.py /home/$directory
+    sudo chmod 777 button_event_rising_m2z.py
+    sudo mv button_event_rising_m2z.py /home/$directory
 	sudo chmod 777 sys_stats.py
 	sudo mv sys_stats.py /home/$directory/luma.examples/examples/
 
@@ -295,7 +301,7 @@ To increase by another amount modify the line (sudo fallocate -l 735M) for the a
 
 You can find examples for the oled screen in the directory /home/$user/gpio_files/luma.examples/examples/ and other examples on the use of leds, buttons, events, pull_up, pwm, system information and event detection in the directory /home/$user/gpio-examples/
 
-### gpio pin table via terminal (sudo gpioread)
+### gpio pin table via terminal (sudo gpioread) <img src="https://user-images.githubusercontent.com/62630527/176109582-31f37087-5e49-415e-aadb-4efd5668edc0.png" width="25px">
 
 ![6](https://user-images.githubusercontent.com/62630527/176101146-0fb914c6-8f1c-4634-ba11-dbea3f15180f.PNG)
 ####
@@ -305,7 +311,7 @@ You can find examples for the oled screen in the directory /home/$user/gpio_file
 ![9](https://user-images.githubusercontent.com/62630527/176101171-2a72f677-3944-4753-aed8-9ed432dedb66.PNG)
 ####
 
-### i2c OLED display examples
+### i2c OLED display examples <img src="https://user-images.githubusercontent.com/62630527/176109587-952627c0-96bc-4810-9dfd-1edb4637cfe5.png" width="25px">
 
 ![7](https://user-images.githubusercontent.com/62630527/176101345-bc48c74c-8161-4502-8d55-eb5802301307.PNG)
 ####
@@ -319,14 +325,14 @@ You can find examples for the oled screen in the directory /home/$user/gpio_file
 ![sys_info](https://user-images.githubusercontent.com/62630527/176106194-a8ac4df0-198f-464d-99b1-cd5483170b6f.jpg)
 ####
 
-### Example for use of led 
+### Example for use of led <img src="https://user-images.githubusercontent.com/62630527/176109620-94e3b427-783d-4274-a708-a76adf119844.png" width="25px">
 
 ![10](https://user-images.githubusercontent.com/62630527/176103746-0dbd4700-3456-4118-ae95-bdbda1e9a4ea.PNG)
 ####
 ![led](https://user-images.githubusercontent.com/62630527/176106154-f7822c22-77c9-4111-93a5-76cf7c97efd0.jpg)
 ####
 
-### Example button connection pull_up
+### Example button connection pull_up <img src="https://user-images.githubusercontent.com/62630527/176109611-b8c7d04c-e54a-4009-9c40-371dbbda2126.png" width="25px">
 
 ![11](https://user-images.githubusercontent.com/62630527/176103757-7448a539-867d-430e-9bb1-27a20e619353.PNG)
 ####
