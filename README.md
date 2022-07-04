@@ -22,7 +22,7 @@ Creé este repositorio debido a la falta de información sobre el manejo GPIO co
 - [Descarga de Imagenes](#descargas-)
 - [Referencias y Menciones](#referencias-y-menciones)
 
-## Nuevas características configuración y script v 1.4.9 <img src="https://user-images.githubusercontent.com/62630527/175873787-3455ffdd-ec83-48ef-89b8-fb01877ed8f9.png" width="25px" height="25px">
+## Nuevas características configuración y script v 1.4.9.2 <img src="https://user-images.githubusercontent.com/62630527/175873787-3455ffdd-ec83-48ef-89b8-fb01877ed8f9.png" width="25px" height="25px">
 
     -Nueva tabla gpio con pines corregidos (comando: sudo gpioread)
     -Incremento de memoria swap a 1G automático 
@@ -128,10 +128,15 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
     sudo python3 setup.py install
     cd
 
-    git clone https://github.com/BPI-SINOVOIP/BPI-WiringPi2.git
+    git clone https://github.com/bontango/BPI-WiringPi2.git
     cd BPI-WiringPi2
     sudo chmod 777 build
     sudo ./build 
+    cd
+
+    git clone https://github.com/GrazerComputerClub/RPi.GPIO.git
+    cd RPi.GPIO
+    sudo python3 setup.py install
     cd
 
     git clone https://github.com/LeMaker/RPi.GPIO_BP -b bananapi
@@ -141,19 +146,6 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
 
     git clone https://github.com/codelectron/ssd1306.git
     cd ssd1306
-    sudo python3 setup.py install
-    cd
-
-
-#### Antigua Libreria
-    git clone https://github.com/BPI-SINOVOIP/RPi.GPIO.git
-    cd RPi.GPIO
-    sudo python3 setup.py install
-    cd
-
-#### Nueva Libreria
-    git clone https://github.com/GrazerComputerClub/RPi.GPIO.git
-    cd RPi.GPIO
     sudo python3 setup.py install
     cd
 
@@ -168,6 +160,20 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
     cd
 
     git clone https://github.com/TuryRx/Bananapi-m2-zero-GPIO-files.git
+
+#### Antiguas Librerias
+
+    git clone https://github.com/BPI-SINOVOIP/BPI-WiringPi2.git
+    cd BPI-WiringPi2
+    sudo chmod 777 build
+    sudo ./build 
+    cd
+
+    git clone https://github.com/BPI-SINOVOIP/RPi.GPIO.git
+    cd RPi.GPIO
+    sudo python3 setup.py install
+    cd
+
 
 #### Perfecto una vez terminado esto terminaremos con la instalación de las bibliotecas faltantes de python3.
 

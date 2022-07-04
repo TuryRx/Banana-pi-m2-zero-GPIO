@@ -9,7 +9,7 @@ echo '                                       |__/                               
 echo ''
 
 echo '          Welcome to GPIO Installation Wizard for Bananapi m2 zero'
-echo '                                    rev 1.4.9.1                                 '
+echo '                                    rev 1.4.9.2                                 '
 
 sleep 5s
 
@@ -130,7 +130,8 @@ echo ''
 
 git clone https://github.com/TuryRx/Bananapi-m2-zero-GPIO-files.git
 git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
-git clone https://github.com/BPI-SINOVOIP/BPI-WiringPi2.git
+##git clone https://github.com/BPI-SINOVOIP/BPI-WiringPi2.git
+git clone https://github.com/bontango/BPI-WiringPi2.git
 git clone https://github.com/LeMaker/RPi.GPIO_BP -b bananapi
 git clone https://github.com/codelectron/ssd1306.git
 ##git clone https://github.com/BPI-SINOVOIP/RPi.GPIO.git //Old library
