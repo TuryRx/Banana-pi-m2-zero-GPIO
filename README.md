@@ -390,6 +390,8 @@ Puedes encontrar ejemplos para la pantalla oled en el directorio /home/$user/gpi
 
 ## Imagenes 26-07-21 <img src="https://user-images.githubusercontent.com/62630527/172993373-e48489ba-2b27-4de8-9504-a8119bb25a78.png" width="25px">
 
+### Imagenes Antiguas
+
 #### [Archivo de imágenes viejas Banana pi M2 Zero 2021-2022](https://github.com/TuryRx/Banana-pi-m2-zero-Images)
 
 ## Referencias y Menciones
