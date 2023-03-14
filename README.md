@@ -388,7 +388,7 @@ Puedes encontrar ejemplos para la pantalla oled en el directorio /home/$user/gpi
 
 ## Descargas <img src="https://user-images.githubusercontent.com/62630527/158044106-a52b6ef1-a65d-42d1-b376-79284df8721b.png" width="25px">
 
-## Imagenes 26-07-21 <img src="https://user-images.githubusercontent.com/62630527/172993373-e48489ba-2b27-4de8-9504-a8119bb25a78.png" width="25px">
+## Imagenes 18-02-23 <img src="https://user-images.githubusercontent.com/62630527/172993373-e48489ba-2b27-4de8-9504-a8119bb25a78.png" width="25px">
 
 ### Imagenes Antiguas
 
