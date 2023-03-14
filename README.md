@@ -11,6 +11,10 @@
 
 Creé este repositorio debido a la falta de información sobre el manejo GPIO con Bananapi m2 cero, así que mi propósito a través de esta pequeña guía es hacer la vida un poco más fácil en cuento a este tema.
 
+<a href='https://ko-fi.com/turyrx' target='_blank'><img height='35' style='border:0px;height:40px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+
+Hola a todos soy su amigo TuryRx el motivo de abrir este ko-if para con su apoyo seguir el desarrollo y mantenimiento de imágenes sobre banana pi, ya que es algo complicado generar imágenes e información sobre este tipo de placas de desarrollo y su apoyo me ayudaría mucho a seguir desarrollando no solo para esta placa si no para más así como darme apoyo para seguir compartiéndoles todo lo que pueda, de antemano les agradezco a todos los que me puedan apoyar y aunque no lo puedan hacer me alegra mucho que mi contenido les pueda servir.
+
 ## Tabla de contenidos
 
 - [Instalación Rápida](#instalación-rápida-)
@@ -102,15 +106,21 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
 
 #### Seguido esto vamos a descargar e instalar las librerías que utilizaremos con python3, dicho esto en este punto no instalaremos todas ya que existen algunas librerías que solo podremos instalar más adelante por falta de algunas dependencias que iremos resolviendo mediante avancemos con la instalación. 
 
-    sudo pip install setuptools==58.3.0
-    sudo pip install wheel==0.37.0
+    sudo pip3 install setuptools==58.3.0
+    sudo pip3 install wheel==0.37.0
     sudo pip3 install pyserial==3.5
     sudo pip3 install pyusb==1.2.1
-    sudo pip3 install pyftdi==0.53.3
+    sudo pip3 install pyftdi==0.54.0
     sudo pip3 install Adafruit-PureIO==1.1.9
-    sudo pip3 install Adafruit-PlatformDetect==3.17.1
-    sudo pip3 install Adafruit-Blinka==6.15.0
+    sudo pip3 install Adafruit-PlatformDetect==3.22.0
+    sudo pip3 install Adafruit-Blinka==7.1.1
     sudo pip3 install smbus2==0.4.1
+    sudo pip3 install Deprecated==1.2.13
+    sudo pip3 install Pillow==9.4.0
+    sudo pip3 install RPi.GPIO==0.6.3
+    sudo pip3 install spidev==3.5
+    sudo pip3 install argcomplete==2.1.1
+    sudo pip3 install wrapt==1.14.0
     sudo pip3 install pusherclient==0.3.0
     sudo pip3 install psutil==5.8.0
     sudo pip3 install oauthlib==3.1.1
@@ -182,8 +192,8 @@ Para terminar ahora solo quedaria habilitar GPIO e I2C
     sudo pip3 install adafruit-circuitpython-busdevice==5.1.0
     sudo pip3 install adafruit-circuitpython-framebuf==1.4.7
     sudo pip3 install adafruit-circuitpython-ssd1306==2.12.2
+    sudo pip3 install cbor2==5.4.2
     sudo pip3 install luma.oled==3.8.1
-
 
 #### Ahora iremos a la carpeta Banana-Pi-m2-zero-GPIO-files y copiaremos los archivos a los siguientes directorios para habilitar el uso de los pines GPIO.
 
@@ -367,55 +377,13 @@ Puedes encontrar ejemplos para la pantalla oled en el directorio /home/$user/gpi
 #### Tambien les dejare el link de mi canal de youtube y los links de mis imagenes.
 
     ▶️ TuryRx 🔥
-    https://www.youtube.com/channel/UCsVnls-pcXUDKCafBRPJIsg
+    https://www.youtube.com/channel/UC2qm0bsEO0u1wBgiINs8-5w
 
 ## Descargas <img src="https://user-images.githubusercontent.com/62630527/158044106-a52b6ef1-a65d-42d1-b376-79284df8721b.png" width="25px">
 
 ## Imagenes 26-07-21 <img src="https://user-images.githubusercontent.com/62630527/172993373-e48489ba-2b27-4de8-9504-a8119bb25a78.png" width="25px">
 
-### Base Ubuntu Focal <img src="https://user-images.githubusercontent.com/62630527/172993496-2ac24566-8881-4862-a976-69f49d257cfc.png" width="25px">
-
-#### Ubuntu Focal Servidor 
-    https://www.mediafire.com/file/8bbmt4ovp1np3l5/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52.img_26-07-2021_optifine.rar/file
-#### Ubuntu Focal Servidor Minima
-    https://www.mediafire.com/file/9mttmdoegw8nxeb/Armbian_21.11.0-trunk_Bananapim2zero_focal_current_5.10.75_minimal_05-11-2021.rar/file
-#### Ubuntu Focal Escritorio xfce 
-    https://www.mediafire.com/file/314d3jlg5xuiv2t/Armbian_21.08.0-trunk_Bananapim2zero_focal_current_5.10.52_xfce_desktop_26-07-2021_optifine.rar/file
-#### Ubuntu Focal Escritorio i3wm
-    https://www.mediafire.com/file/e2a3x1l21kri4ai/Armbian_21.11.0-trunk_Bananapim2zero_focal_current_5.10.75_i3-wm_desktop_05-11-2021.rar/file
-#### Ubuntu Focal GPIO configurado rev1.3 28-03-22
-    https://www.mediafire.com/file/rt3ww2bvezotqsg/Banana_Pi_M2Z_GPIO_28_03_22.rar/file
-
-## Nuevas Imagenes 30-05-22 <img src="https://user-images.githubusercontent.com/62630527/172993439-9bfec90a-5cbb-46ad-85c2-bd3dd113c8ef.png" width="25px">
-
-### Base Ubuntu Focal <img src="https://user-images.githubusercontent.com/62630527/172993496-2ac24566-8881-4862-a976-69f49d257cfc.png" width="25px">
-
-#### Banana Pi M2 Zero Image Server 30-05-22
-    https://www.mediafire.com/file/aiu27ozq1ka4dkf/Armbian_22.05.0-trunk_Bananapim2zero_focal_current_5.15.43_Server.rar/file
-
-#### Banana Pi M2 Zero Image Server Minimal 30-05-22
-    https://www.mediafire.com/file/f6winm4iyahc1y7/Armbian_22.05.0-trunk_Bananapim2zero_focal_current_5.15.43_Server_Minimal.rar/file
-
-#### Banana Pi M2 Zero Image Desktop XFCE 30-05-22
-    https://www.mediafire.com/file/navy5t401hzjgsi/Armbian_22.05.0-trunk_Bananapim2zero_focal_current_5.15.43_xfce_desktop.rar/file
-
-### Base Ubuntu Jammy <img src="https://user-images.githubusercontent.com/62630527/172993533-1f865635-977b-4d7e-83e6-883e8bf1c9cb.png" width="25px">
-
-#### Banana Pi M2 Zero Image Server 30-05-22
-    https://www.mediafire.com/file/bp2kkoiaygoe3fs/Armbian_22.05.0-trunk_Bananapim2zero_jammy_current_5.15.43_Server.rar/file
-
-#### Banana Pi M2 Zero Image Server Minimal 30-05-22
-    https://www.mediafire.com/file/7pmaty8inxkbsc1/Armbian_22.05.0-trunk_Bananapim2zero_jammy_current_5.15.43_Server_Minimal.rar/file
-
-### Base Debian Buster <img src="https://user-images.githubusercontent.com/62630527/172993606-923c9b2d-11a6-480f-8cd9-c342bc28c42d.png" width="25px">
-
-#### Banana Pi M2 Zero Image Server 30-05-22
-    https://www.mediafire.com/file/qquiv00mm8ago2a/Armbian_22.08.0-trunk_Bananapim2zero_buster_current_5.15.43_Server.rar/file
-
-### Base Debian Bullseye <img src="https://user-images.githubusercontent.com/62630527/172993639-7163fab8-4268-4218-a267-a483b189e5ae.png" width="25px">
-
-#### Banana Pi M2 Zero Image Server 30-05-22
-    https://www.mediafire.com/file/ahqfobon44htbud/Armbian_22.08.0-trunk_Bananapim2zero_bullseye_current_5.15.43_Server.rar/file
+#### [Archivo de imágenes viejas Banana pi M2 Zero 2021-2022](https://github.com/TuryRx/Banana-pi-m2-zero-Images)
 
 ## Referencias y Menciones
 

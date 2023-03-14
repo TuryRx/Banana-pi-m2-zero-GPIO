@@ -9,7 +9,7 @@ echo '                                       |__/                               
 echo ''
 
 echo '          Welcome to GPIO Installation Wizard for Bananapi m2 zero'
-echo '                                    rev 1.4.9.2                                 '
+echo '                                   rev 1.5.2                                 '
 
 sleep 5s
 
@@ -68,6 +68,7 @@ libsdl-ttf2.0-dev \
 libsdl-mixer1.2-dev \
 libsdl-image1.2-dev \
 libjpeg-dev \
+python3-dev \
 python-dev \
 lm-sensors \
 unrar \
@@ -89,8 +90,8 @@ echo ''
 
 sleep 2s
 
-sudo pip install setuptools==58.3.0
-sudo pip install wheel==0.37.0
+sudo pip3 install setuptools==58.3.0
+sudo pip3 install wheel==0.37.0
 sudo pip3 install pyserial==3.5
 sudo pip3 install pyusb==1.2.1
 sudo pip3 install pyftdi==0.54.0
@@ -101,6 +102,12 @@ sudo pip3 install Adafruit-Blinka==7.1.1
 #sudo pip3 install adafruit-circuitpython-ssd1306
 #sudo pip3 install Adafruit-SSD1306
 sudo pip3 install smbus2==0.4.1
+sudo pip3 install Deprecated==1.2.13
+sudo pip3 install Pillow==9.4.0
+sudo pip3 install RPi.GPIO==0.6.3
+sudo pip3 install spidev==3.5
+sudo pip3 install argcomplete==2.1.1
+sudo pip3 install wrapt==1.14.0
 #sudo pip3 install --upgrade ssd1306
 sudo pip3 install pusherclient==0.3.0
 sudo pip3 install psutil==5.8.0
@@ -111,6 +118,9 @@ sudo pip3 install sgmllib3k==1.0.0
 sudo pip3 install feedparser==6.0.8
 sudo pip3 install subprocess.run==0.0.8
 sudo pip3 install vcgencmd==0.1.1
+#sudo pip3 install Pillow==9.2.0
+#sudo pip3 install cbor2==5.4.3
+#sudo -H pip install --upgrade pip setuptools
 
 sleep 2s
 
@@ -130,14 +140,22 @@ echo ''
 
 git clone https://github.com/TuryRx/Bananapi-m2-zero-GPIO-files.git
 git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
-##git clone https://github.com/BPI-SINOVOIP/BPI-WiringPi2.git
+###git clone https://github.com/BPI-SINOVOIP/BPI-WiringPi2.git
 git clone https://github.com/bontango/BPI-WiringPi2.git
 git clone https://github.com/LeMaker/RPi.GPIO_BP -b bananapi
 git clone https://github.com/codelectron/ssd1306.git
-##git clone https://github.com/BPI-SINOVOIP/RPi.GPIO.git //Old library
+###git clone https://github.com/BPI-SINOVOIP/RPi.GPIO.git //Old library
 git clone https://github.com/GrazerComputerClub/RPi.GPIO.git
 sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/luma.examples.rar /home/$directory
 sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/luma.oled.rar /home/$directory
+
+##sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/Adafruit_Python_GPIO.rar /home/$directory
+##sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/BPI-WiringPi2.rar /home/$directory
+##sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/RPi.GPIO_BP.rar /home/$directory
+##sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/ssd1306.rar /home/$directory
+##sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/RPi.GPIO.rar /home/$directory
+##sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/luma.examples.rar /home/$directory
+##sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/luma.oled.rar /home/$directory
 
 
 sleep 2s
@@ -167,13 +185,14 @@ cd ssd1306
 sudo python3 setup.py install
 cd ..
 
-cd luma.oled
-sudo python3 setup.py install
-cd ..
+sudo rm -R /usr/local/lib/python3.8/dist-packages/luma*
+#cd luma.oled
+#sudo python3 setup.py install
+#cd ..
 
-cd RPi.GPIO
-sudo python3 setup.py install
-cd
+#cd RPi.GPIO
+#sudo python3 setup.py install
+#cd
 
 sudo pip3 install Adafruit-SSD1306==1.6.2
 sudo pip3 install ssd1306==0.2.0
@@ -181,6 +200,7 @@ sudo pip3 install adafruit-circuitpython-busdevice==5.1.0
 sudo pip3 install adafruit-circuitpython-framebuf==1.4.7
 sudo pip3 install adafruit-circuitpython-ssd1306==2.12.2
 sudo pip3 install cbor2==5.4.2
+#sudo pip3 install luma.core==2.3.1
 sudo pip3 install luma.oled==3.8.1
 
 echo ''
@@ -327,6 +347,7 @@ ln -s /home/$directory/gpio_files/pwm_m2z.py /home/$directory/gpio-examples/
 ln -s /home/$directory/gpio_files/button_pull_up_m2z.py /home/$directory/gpio-examples/
 ln -s /home/$directory/gpio_files/gpio_read_pin_m2z.py /home/$directory/gpio-examples/
 ln -s /home/$directory/gpio_files/button_event_rising_m2z.py /home/$directory/gpio-examples/
+sudo chmod 775 -R * ~/
 
 echo ''
 
@@ -341,20 +362,27 @@ echo 'a bit easier on the bananapi m2 zero'
 
 echo ''
 
-echo 'I leave you the link of my repository in git more detailed for this'
+echo 'I leave you the link of my repository in more detailed git for this'
 echo 'and the link of my channel if you like this type of development'
-echo 'I would appreciate if you would like and subscribe to my channel'
+echo 'I would appreciate it if you would like and subscribe to my channel'
+echo 'And if you like my work and want to support me so that'
+echo 'I keep uploading more content, I ll leave you my ko-fi'
 
 echo ''
 
 echo 'Youtube TuryRx'
-echo 'https://www.youtube.com/channel/UCsVnls-pcXUDKCafBRPJIsg'
+echo 'https://www.youtube.com/channel/UC2qm0bsEO0u1wBgiINs8-5w'
 
 echo ''
 
 echo 'github link'
 echo 'https://github.com/TuryRx/Bananapi-m2-zero-GPIO'
 
-sleep 10s
+echo ''
+
+echo 'Ko-fi'
+echo 'https://ko-fi.com/turyrx'
+
+sleep 2s
 
 echo ''
