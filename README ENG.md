@@ -26,6 +26,13 @@ Hello everyone, I am your friend TuryRx, the reason for opening this ko-if is to
 - [Download Images](#downloads-)
 - [References and Mentions](#references-and-mentions)
 
+## Configuration and script fixes v 1.5.2 <img src="https://user-images.githubusercontent.com/62630527/175873787-3455ffdd-ec83-48ef-89b8-fb01877ed8f9.png" width="25px" height ="25px">
+
+     -Automatic installation problem fixed.
+     -Problem with oled library solved.
+     -Problem with the use of the RPI.GPIO library fixed.
+     -Problem with missing dependencies fixed.
+
 ## New features configuration and script v 1.4.9.2 <img src="https://user-images.githubusercontent.com/62630527/175873787-3455ffdd-ec83-48ef-89b8-fb01877ed8f9.png" width="25px" height="25px">
 
     -New gpio table with fixed pins (command: sudo gpioread) 
