@@ -454,7 +454,7 @@ You can find examples for the oled screen in the directory /home/$user/gpio_file
 ### LibreELEC <img src="https://user-images.githubusercontent.com/62630527/230498503-4ad65bfd-a68b-4a45-806b-e1730051203c.png" width="25px">
 
 #### LibreELEC Kodi 20
-    https://www.mediafire.com/file/6vu
+    https://www.mediafire.com/file/6vuzdxlawoomisq/LibreELEC_H2_Bananapi_M2_Zero.rar/file
 
 ### Old Images
 
