@@ -7,7 +7,7 @@
 ![BANANAPI-ZERO-01 (1)](https://user-images.githubusercontent.com/62630527/128290176-105ffebd-346a-4c38-8d4a-be466738a2ef.png)
 
 
-## Hola soy Roxas
+## Hola soy Roxas 
 
 Creé este repositorio debido a la falta de información sobre el manejo GPIO con Bananapi m2 cero, así que mi propósito a través de esta pequeña guía es hacer la vida un poco más fácil en cuento a este tema.
 
