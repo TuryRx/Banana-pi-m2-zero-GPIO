@@ -145,7 +145,7 @@ git clone https://github.com/bontango/BPI-WiringPi2.git
 git clone https://github.com/LeMaker/RPi.GPIO_BP -b bananapi
 git clone https://github.com/codelectron/ssd1306.git
 ###git clone https://github.com/BPI-SINOVOIP/RPi.GPIO.git //Old library
-git clone https://github.com/GrazerComputerClub/RPi.GPIO.git
+###git clone https://github.com/GrazerComputerClub/RPi.GPIO.git
 sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/luma.examples.rar /home/$directory
 sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/luma.oled.rar /home/$directory
 
@@ -157,6 +157,8 @@ sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/luma.oled.rar /home/$direct
 ##sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/luma.examples.rar /home/$directory
 ##sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/luma.oled.rar /home/$directory
 
+sudo rm -R /home/$directory/BPI-WiringPi2/gpio/readall.c
+sudo cp /home/$directory/Banana-pi-m2-zero-GPIO/readall.c /home/$directory/BPI-WiringPi2/gpio/
 
 sleep 2s
 
@@ -192,7 +194,7 @@ sudo rm -R /usr/local/lib/python3.8/dist-packages/luma*
 
 #cd RPi.GPIO
 #sudo python3 setup.py install
-#cd
+#cd ..
 
 sudo pip3 install Adafruit-SSD1306==1.6.2
 sudo pip3 install ssd1306==0.2.0
@@ -230,6 +232,29 @@ sudo cp -r * /var
 cd ..
 
 echo 'Files Copied Successfully'
+
+sleep 2s
+
+echo ''
+
+echo '----------------------------------Fix Problems--------------------------------'
+
+echo ''
+
+sleep 2s
+
+sudo rm -R /usr/local/lib/python3.8/dist-packages/RPi*
+sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/RPi.GPIO.rar /home/$directory/
+
+cd /home/$directory/RPi.GPIO
+sudo python3 setup.py install
+cd ..
+
+cd /home/$directory/RPi.GPIO_BP
+sudo python3 setup.py install
+cd ..
+
+echo 'Operation Successfully Completed'
 
 sleep 2s
 
