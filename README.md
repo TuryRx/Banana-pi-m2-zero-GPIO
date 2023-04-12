@@ -26,6 +26,13 @@ Hola a todos soy su amigo TuryRx el motivo de abrir este ko-if para con su apoyo
 - [Descarga de Imagenes](#descargas-)
 - [Referencias y Menciones](#referencias-y-menciones)
 
+## Correcciones de configuración y script v 1.6.1 <img src="https://user-images.githubusercontent.com/62630527/175873787-3455ffdd-ec83-48ef-89b8-fb01877ed8f9.png" width="25px" height="25px">
+
+    -Problema con libreria oled solucionado.
+    -Problema con uso de librerías RPI.GPIO Solucionado.
+    -Problema con versiones de librerías solucionado.
+    -Problema con tabla gpio solucionado.
+
 ## Correcciones de configuración y script v 1.5.2 <img src="https://user-images.githubusercontent.com/62630527/175873787-3455ffdd-ec83-48ef-89b8-fb01877ed8f9.png" width="25px" height="25px">
 
     -Problema de instalación automática solucionado.

@@ -9,7 +9,7 @@ echo '                                       |__/                               
 echo ''
 
 echo '          Welcome to GPIO Installation Wizard for Bananapi m2 zero'
-echo '                                   rev 1.5.2                                 '
+echo '                                   rev 1.6.1                                 '
 
 sleep 5s
 
