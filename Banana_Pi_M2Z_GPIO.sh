@@ -376,13 +376,13 @@ ln -s /home/$directory/gpio_files/gpio_read_pin_m2z.py /home/$directory/gpio-exa
 ln -s /home/$directory/gpio_files/button_event_rising_m2z.py /home/$directory/gpio-examples/
 sudo chmod 775 -R * ~/
 
-sudo cd /home/$directory/
+cd /home/$directory/
 sudo mkdir Ethernet
-cd Bananapi-m2-zero-GPIO-files
-sudo chmod 777 Activate Ethernet.sh
-sudo chmod 777 Disable Ethernet.sh
-sudo mv Activate Ethernet.sh /home/$directory/Ethernet
-sudo mv Disable Ethernet.sh /home/$directory/Ethernet
+cd /home/$directory/Banana-pi-m2-zero-GPIO/
+sudo chmod 777 -R  "Activate Ethernet.sh"
+sudo chmod 777 -R  "Disable Ethernet.sh"
+sudo mv "Activate Ethernet.sh" /home/$directory/Ethernet/
+sudo mv "Disable Ethernet.sh" /home/$directory/Ethernet/
 
 echo ''
 
