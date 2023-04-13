@@ -9,7 +9,7 @@ echo '                                       |__/                               
 echo ''
 
 echo '          Welcome to GPIO Installation Wizard for Bananapi m2 zero'
-echo '                                   rev 1.6.1                                 '
+echo '                                 rev 1.6.1.2                                 '
 
 sleep 5s
 
@@ -255,7 +255,6 @@ sudo python3 setup.py install
 cd ..
 
 mv /home/$directory/Banana-pi-m2-zero-GPIO/bananapi-m2-zero-eth0.dtbo /boot/overlay-user/
-echo 'user_overlays=bananapi-m2-zero-eth0' | sudo tee -a /boot/armbianEnv.txt
 
 echo 'Operation Successfully Completed'
 
@@ -376,6 +375,14 @@ ln -s /home/$directory/gpio_files/button_pull_up_m2z.py /home/$directory/gpio-ex
 ln -s /home/$directory/gpio_files/gpio_read_pin_m2z.py /home/$directory/gpio-examples/
 ln -s /home/$directory/gpio_files/button_event_rising_m2z.py /home/$directory/gpio-examples/
 sudo chmod 775 -R * ~/
+
+sudo cd /home/$directory/
+sudo mkdir Ethernet
+cd Bananapi-m2-zero-GPIO-files
+sudo chmod 777 Activate Ethernet.sh
+sudo chmod 777 Disable Ethernet.sh
+sudo mv Activate Ethernet.sh /home/$directory/Ethernet
+sudo mv Disable Ethernet.sh /home/$directory/Ethernet
 
 echo ''
 
