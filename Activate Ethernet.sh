@@ -1,2 +1,2 @@
 #!/bin/sh 
-sed -i 's/user_overlays=bananapi-m2-zero-eth0/ /g' /boot/armbianEnv.txt
+echo 'user_overlays=bananapi-m2-zero-eth0' | sudo tee -a /boot/armbianEnv.txt
