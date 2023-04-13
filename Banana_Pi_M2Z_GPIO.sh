@@ -254,6 +254,9 @@ cd /home/$directory/RPi.GPIO_BP
 sudo python3 setup.py install
 cd ..
 
+mv /home/$directory/Banana-pi-m2-zero-GPIO/bananapi-m2-zero-eth0.dtbo /boot/overlay-user/
+echo 'user_overlays=bananapi-m2-zero-eth0' | sudo tee -a /boot/armbianEnv.txt
+
 echo 'Operation Successfully Completed'
 
 sleep 2s
